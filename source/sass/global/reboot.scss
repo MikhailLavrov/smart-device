@@ -14,10 +14,9 @@ body {
 html {
   font-style: normal;
   font-weight: 400;
-  font-size: $fz-default;
-  line-height: 24px;
-  font-family: $ff-placeholder;
-  color: $color-default-black;
+  font-family: $ff-roboto-condensed;
+  font-size: 16px;
+  color: $text-color-dark;
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -31,11 +30,11 @@ body {
   width: 100%;
   height: 100%;
 
-  background-color: $color-default-white;
+  background-color: $base-color-white;
 }
 
 a {
-  color: $color-default-black;
+  color: $text-color-dark;
   text-decoration: none;
 }
 
@@ -57,9 +56,9 @@ textarea {
 // если в стилях уже используется box-shadow есть другое решение -
 // задать к списку транзишенов `background-color 10000000s ease-out`
 input:-webkit-autofill {
-  box-shadow: inset 0 0 0 1000px $color-default-white;
+  box-shadow: inset 0 0 0 1000px $base-color-light;
 
-  -webkit-text-fill-color: $color-default-black;
+  -webkit-text-fill-color: $base-color-light;
 }
 
 // firefox placeholder \ invalid fix + ios bdrs

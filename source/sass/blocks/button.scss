@@ -1,0 +1,35 @@
+.button {
+  display: inline-flex;
+
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-family: 'Roboto Condensed';
+  font-weight: 700;
+
+  &--blue {
+    background-color: $base-color-primary;
+    color: $text-color-light;
+  }
+
+  &--light {
+    background-color: $base-color-white;
+    color: $text-color-alt;
+  }
+
+  &--dark {
+    background-color: $base-color-dark;
+    color: $text-color-light;
+  }
+
+  &--darker {
+    background-color: $black-pearl;
+    color: $text-color-white;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+}

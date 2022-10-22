@@ -1,13 +1,6 @@
-// Vendor
-// ---------------------------------
-
 @import "vendor/normalize";
-// Swiper 7.4.1
-// @import "vendor/swiper";
 
 // Global
-// ---------------------------------
-
 @import "variables";
 @import "mixins";
 @import "global/fonts";
@@ -16,10 +9,10 @@
 @import "global/container";
 
 // Blocks
-// ---------------------------------
-
-@import "blocks/btn";
+@import "blocks/button";
+@import "blocks/logo";
 @import "blocks/modal";
+@import "blocks/header";
 
 // ---------------------------------
 
@@ -43,6 +36,7 @@
     }
 */
 // но не используем для текстовых полей ( input, textarea )
+
 // так же в сборке есть отдельный миксин для hover
 /*@mixin hover {
     @media (hover: hover) {
@@ -66,6 +60,7 @@
     }
   }
 */
+
 // адаптив пишем внутри каждого класса (смотрим container.scss)
 
 // для фикса проблем с vh на iOS в сборке подключен скрипт
