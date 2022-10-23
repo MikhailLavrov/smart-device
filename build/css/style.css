@@ -668,6 +668,58 @@ button,
   pointer-events: none;
 }
 
+.products {
+  padding: 70px 0 140px;
+  background-color: #041827;
+}
+
+.products h2 {
+  margin: 0;
+  margin-bottom: 50px;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+  color: #FFFFFF;
+}
+
+.products__list {
+  margin: 0;
+  padding: 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-flow: dense;
+  gap: 85px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.products__item a {
+  padding: 50px 40px;
+  min-height: 650px;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+  line-height: 30px;
+  color: #FFFFFF;
+  background: url("../../img/main-prod.jpg") no-repeat;
+  background-size: cover;
+}
+
+.products__item:nth-child(1) a {
+  background-position: 15% 75%;
+}
+
+.products__item:nth-child(2) a {
+  background-position: 50% 75%;
+}
+
+.products__item:nth-child(3) a {
+  background-position: 85% 75%;
+}
+
 .about {
   padding: 60px 0 100px;
 }
@@ -682,9 +734,41 @@ button,
   column-gap: 100px;
 }
 
-.about__image img {
-  -webkit-clip-path: url("#about-clip");
-  clip-path: url("#about-clip");
+.about__decor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-transform: rotate(-180deg);
+  -ms-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+  overflow: hidden;
+}
+
+.about__decor span {
+  background-image: url("../../img/about-bg.webp");
+  font-weight: 700;
+  font-size: 156px;
+  line-height: 220px;
+  -webkit-writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .about__info {

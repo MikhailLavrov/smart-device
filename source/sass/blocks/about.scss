@@ -8,29 +8,44 @@
   column-gap: 100px;
 }
 
-.about__image img {
-  clip-path: url("#about-clip");
-  
+.about__decor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(-180deg);
+  overflow: hidden;
+}
+
+.about__decor span {
+  background-image: url("../../img/about-bg.webp");
+  font-weight: 700;
+  font-size: 156px;
+  line-height: 220px;
+  writing-mode: vertical-rl;
+  background-clip: text;
+  color: transparent;
+  user-select: none;
 }
 
 .about__info {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
 
-  & h3 {
-    margin: 0;
-    margin-bottom: 5px;
+.about__info h3 {
+  margin: 0;
+  margin-bottom: 5px;
 
-    font-size: 36px;
-    line-height: 51px;
-  }
+  font-size: 36px;
+  line-height: 51px;
+}
 
-  & p {
-    margin: 10px 0;
-    font-family: 'PT Mono';
-    line-height: 22px;
-  }
+.about__info p {
+  margin: 10px 0;
+  font-family: 'PT Mono';
+  line-height: 22px;
 }
 
 .about__button {
