@@ -1,0 +1,44 @@
+.about {
+  padding: 60px 0 100px;
+}
+
+.about__container {
+  display: grid;
+  grid-template-columns: 150px auto;
+  column-gap: 100px;
+}
+
+.about__image img {
+  clip-path: url("#about-clip");
+  
+}
+
+.about__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  & h3 {
+    margin: 0;
+    margin-bottom: 5px;
+
+    font-size: 36px;
+    line-height: 51px;
+  }
+
+  & p {
+    margin: 10px 0;
+    font-family: 'PT Mono';
+    line-height: 22px;
+  }
+}
+
+.about__button {
+  margin-top: 15px;
+  width: 180px;
+  padding: 13px;
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+  line-height: 16px;
+}

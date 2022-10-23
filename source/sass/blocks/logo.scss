@@ -3,12 +3,25 @@
   cursor: pointer;
 }
 
+.logo svg {
+  fill: $base-color-primary;
+
+  @media (min-width: $tablet-width) {
+    width: 55px;
+    height: 55px;
+  }
+}
+
 .logo__text {
   margin: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
 
   &--big {
     font-weight: 700;

@@ -10,9 +10,13 @@ $text-color-alt: #00B2FF;
 $text-color-white: #FFFFFF;
 // Pallete
 $black-pearl: #041427;
+$whisper: #EBEBEB;
+$alice-blue: #F8FDFF;
+$primary-darker: rgba(4, 24, 39, 0.5);
 
 // Gradients
-$header-gradient: linear-gradient(180deg, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
+$intro-gradient: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%);
+// $header-gradient: linear-gradient(180deg, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
 
 // Typography
 $ff-pt-mono: "PT Mono", "Times New Roman", serif;

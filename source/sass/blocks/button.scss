@@ -14,8 +14,10 @@
   }
 
   &--light {
-    background-color: $base-color-white;
+    background-color: $alice-blue;
     color: $text-color-alt;
+    border: 1px solid $base-color-primary;
+    border-radius: 3px;
   }
 
   &--dark {

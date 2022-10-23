@@ -1,0 +1,41 @@
+.intro {
+  min-height: 778px;
+  background-color: $base-color-dark;
+  background:
+    $intro-gradient,
+    url("../../img/main-prod.jpg") center/cover no-repeat;
+}
+
+.intro__container {
+  padding: 205px 0 280px;
+}
+
+.intro__info {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.intro h2 {
+  margin: 0;
+  margin-bottom: 40px;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 94px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: $text-color-light;
+}
+
+.intro p {
+  margin: 0;
+  margin-bottom: 40px;
+  font-family: 'PT Mono';
+  font-size: 22px;
+  line-height: 155%;
+  color: $text-color-light;
+}
+
+.intro__button {
+  padding: 15px 25px;
+  border-radius: 3px;
+}
