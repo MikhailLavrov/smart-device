@@ -48,7 +48,7 @@
                 <h2>Печатные платы</h2>
                 <p>производство и монтаж, поставка комплектующих, <br>блоков и модулей</p>
               </div>
-              <button class="intro__button button button--blue" type="button">Получить бесплатную консультацию</button>
+              <a class="intro__link button button--blue" href="#connection">Получить бесплатную консультацию</a>
             </div>
           </div>
         </section>
@@ -93,12 +93,6 @@
             <div class="about__decor">
               <span>2022</span>
             </div>
-            <!-- <div class="about__image">
-              <picture>
-                <source type="image/webp" srcset="./img/about-bg.webp 1x, ./img/about-bg2x.webp 2x">
-                <img width="150" height="320" src="./img/about-bg.jpg" srcset="./img/about-bg2x.jpg 2x" alt="Декоративное изображение.">
-              </picture>
-            </div> -->
             <div class="about__info">
               <h3>О компании</h3>
               <p>Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.</p>
@@ -121,6 +115,47 @@
                 <a href="#">Комплектующие для светотехники</a>
               </li>
             </ul>
+          </div>
+        </section>
+        <section class="connection" id="connection">
+          <h2 class="visually-hidden">Форма обратной связи.</h2>
+          <div class="connection__container container">
+            <div class="connection__image">
+              <picture>
+                <source type="image/webp" srcset="./img/paper-airplane.webp 1x, ./img/paper-airplane2x.webp 2x">
+                <img width="510" height="285" src="./img/paper-airplane.png" srcset="./img/paper-airplane2x.png 2x" alt="Декоративное изображение.">
+              </picture>
+            </div>
+            <div class="form">
+              <div class="form__text">
+                <h3>Остались вопросы? Задайте их нам!</h3>
+                <p>Мы проконсультируем Вас бесплатно</p>
+              </div>
+              <form action="https://echo.htmlacademy.ru/" method="get">
+                <fieldset>
+                  <legend class="visually-hidden">Поля для заполнения.</legend>
+                  <label>
+                    <input type="text" placeholder="Имя">
+                  </label>
+                  <label>
+                    <input type="text" placeholder="Телефон">
+                  </label>
+                  <label>
+                    <textarea placeholder="Ваш вопрос">
+                  </label>
+                </fieldset>
+                <fieldset>
+                  <legend class="visually-hidden">Кнопка и согласие на отправку.</legend>
+                  <button class="button button--dark" type="submit">Задать вопрос</button>
+                  <label>
+                    <input type="checkbox" name="agreement" value="agreement" checked>
+                    <span class="form__agreement-mark"></span>
+                    <span class="form__agreement-name">Я согласен на обработку персональных данных</span>
+                  </label>
+                </fieldset>
+              </form>
+            </div>
+
           </div>
         </section>
       </main>

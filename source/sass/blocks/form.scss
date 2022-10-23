@@ -1,0 +1,49 @@
+.form fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.form input,
+.form textarea,
+.form input::placeholder {
+  font-family: 'PT Mono';
+  color: $text-color-white;
+  line-height: 22px;
+}
+
+.form input,
+.form textarea {
+  padding: 0;
+  background-color: $primary-darker-2;
+  border: none;
+  border-radius: 3px;
+}
+
+.form textarea {
+  width: 100%;
+  min-height: 155px;
+  overflow: hidden;
+}
+
+.form__text {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__text h3 {
+  margin: 0;
+  margin-bottom: 15px;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+  color: $text-color-white;
+}
+
+.form__text p {
+  margin: 0;
+  margin-bottom: 35px;
+  font-family: 'PT Mono';
+  line-height: 22px;
+  color: $text-color-white;
+}

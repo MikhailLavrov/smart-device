@@ -1,0 +1,16 @@
+.connection {
+  background-color: $base-color-primary;
+  padding: 170px 0 250px;
+}
+
+.connection__container {
+  display: grid;
+  grid-template-columns: 42% 48%;
+  justify-content: space-between;
+}
+
+.connection__image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

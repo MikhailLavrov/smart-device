@@ -4,8 +4,8 @@
 
 .about__container {
   display: grid;
-  grid-template-columns: 150px auto;
-  column-gap: 100px;
+  grid-template-columns: 13% 80%;
+  justify-content: space-between;
 }
 
 .about__decor {

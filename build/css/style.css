@@ -687,10 +687,12 @@ button,
   padding: 0;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[3];
-  grid-template-columns: repeat(3, 1fr);
+  -ms-grid-columns: (29%)[3];
+  grid-template-columns: repeat(3, 29%);
   grid-auto-flow: dense;
-  gap: 85px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -720,6 +722,120 @@ button,
   background-position: 85% 75%;
 }
 
+.connection {
+  background-color: #00B2FF;
+  padding: 170px 0 250px;
+}
+
+.connection__container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 42% 48%;
+  grid-template-columns: 42% 48%;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.connection__image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.form fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.form input,
+.form textarea,
+.form input::-webkit-input-placeholder {
+  font-family: "PT Mono";
+  color: #FFFFFF;
+  line-height: 22px;
+}
+
+.form input,
+.form textarea,
+.form input::-moz-placeholder {
+  font-family: "PT Mono";
+  color: #FFFFFF;
+  line-height: 22px;
+}
+
+.form input,
+.form textarea,
+.form input:-ms-input-placeholder {
+  font-family: "PT Mono";
+  color: #FFFFFF;
+  line-height: 22px;
+}
+
+.form input,
+.form textarea,
+.form input::-ms-input-placeholder {
+  font-family: "PT Mono";
+  color: #FFFFFF;
+  line-height: 22px;
+}
+
+.form input,
+.form textarea,
+.form input::placeholder {
+  font-family: "PT Mono";
+  color: #FFFFFF;
+  line-height: 22px;
+}
+
+.form input,
+.form textarea {
+  padding: 0;
+  background-color: rgba(4, 20, 39, 0.15);
+  border: none;
+  border-radius: 3px;
+}
+
+.form textarea {
+  width: 100%;
+  min-height: 155px;
+  overflow: hidden;
+}
+
+.form__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.form__text h3 {
+  margin: 0;
+  margin-bottom: 15px;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+  color: #FFFFFF;
+}
+
+.form__text p {
+  margin: 0;
+  margin-bottom: 35px;
+  font-family: "PT Mono";
+  line-height: 22px;
+  color: #FFFFFF;
+}
+
 .about {
   padding: 60px 0 100px;
 }
@@ -727,11 +843,11 @@ button,
 .about__container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 150px auto;
-  grid-template-columns: 150px auto;
-  -webkit-column-gap: 100px;
-  -moz-column-gap: 100px;
-  column-gap: 100px;
+  -ms-grid-columns: 13% 80%;
+  grid-template-columns: 13% 80%;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .about__decor {
@@ -834,9 +950,9 @@ button,
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   outline: none;
-  -webkit-transition: background-color 200ms;
-  -o-transition: background-color 200ms;
-  transition: background-color 200ms;
+  -webkit-transition: 200ms;
+  -o-transition: 200ms;
+  transition: 200ms;
 }
 
 .features__item:hover,
@@ -914,7 +1030,7 @@ button,
   color: #F2F5F6;
 }
 
-.intro__button {
+.intro__link {
   padding: 15px 25px;
   border-radius: 3px;
 }
