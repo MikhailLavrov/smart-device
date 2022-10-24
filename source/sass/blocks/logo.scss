@@ -1,6 +1,9 @@
 .logo {
   width: 215px;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .logo svg {

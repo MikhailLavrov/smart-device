@@ -7,8 +7,8 @@
 
 .connection__container {
   display: grid;
-  grid-template-columns: 42% 48%;
-  justify-content: space-between;
+  grid-template-columns: auto 580px;
+  column-gap: 120px;
 }
 
 .connection__image {

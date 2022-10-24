@@ -9,53 +9,33 @@
   z-index: 10;
 
   background-color: $base-color-dark;
-  box-shadow: 0 0 15px 15px $base-color-dark;
-
-  @media (max-width: $mobile-width) {
-    min-height: 70px;
-  }
-
-  @media (max-width: $tablet-width-only) {
-    padding: 20px 0 10px;
-    min-height: 70px;
-  }
+  box-shadow: $header-shadow;
 }
 
 .header__container {
-  width: 95%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  // display: flex;
+  // align-items: center;
+  // justify-content: space-between;
+  // gap: 10px;
+  // flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 27% auto 27%;
+  column-gap: 4%;
+
   box-sizing: border-box;
-  gap: 10px;
-  flex-wrap: wrap;
-
   color: $base-color-light;
-}
-
-.header__logo {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 
 .header__info {
   display: grid;
-  grid-template-columns: repeat(2, 225px);
-  gap: 15px 30px;
-  grid-auto-flow: dense;
-  align-items: flex-start;
-
-  @media (max-width: $tablet-width-only) {
-    padding: 10px;
-    display: flex;
-  }
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px 10%;
 }
 
 .header__info-link {
   display: flex;
   align-items: center;
-  gap: 10px;
+  align-self: center;
 
   color: $text-color-light;
   font-family: 'PT Mono';
@@ -68,6 +48,7 @@
 
 .header__info-link svg {
   fill: $base-color-primary;
+  margin-right: 15px;
 }
 
 .header__info-link span {
@@ -77,6 +58,8 @@
 }
 
 .header__button {
+  margin-left: auto;
+  margin-right: 60px;
   padding: 10px 16px;
   max-width: 160px;
 

@@ -19,9 +19,8 @@
   padding: 0;
 
   display: grid;
-  grid-template-columns: repeat(3, 29%);
-  grid-auto-flow: dense;
-  justify-content: space-between;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 85px;
   box-sizing: border-box;
 }
 

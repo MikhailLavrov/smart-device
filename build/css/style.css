@@ -695,12 +695,9 @@ button,
   padding: 0;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (29%)[3];
-  grid-template-columns: repeat(3, 29%);
-  grid-auto-flow: dense;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  -ms-grid-columns: (1fr)[3];
+  grid-template-columns: repeat(3, 1fr);
+  gap: 85px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -755,11 +752,11 @@ button,
 .connection__container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 42% 48%;
-  grid-template-columns: 42% 48%;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  -ms-grid-columns: auto 580px;
+  grid-template-columns: auto 580px;
+  -webkit-column-gap: 120px;
+  -moz-column-gap: 120px;
+  column-gap: 120px;
 }
 
 .connection__image {
@@ -884,12 +881,16 @@ button,
   display: grid;
   -ms-grid-columns: 15px auto;
   grid-template-columns: 15px auto;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   gap: 11px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+}
+
+.form__submit label > input,
+.form__submit label > span {
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
 }
 
 .form__checkbox {
@@ -929,11 +930,11 @@ button,
 .about__container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 13% 80%;
-  grid-template-columns: 13% 80%;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  -ms-grid-columns: 150px auto;
+  grid-template-columns: 150px auto;
+  -webkit-column-gap: 100px;
+  -moz-column-gap: 100px;
+  column-gap: 100px;
 }
 
 .about__decor {
@@ -1013,6 +1014,30 @@ button,
   line-height: 16px;
 }
 
+.footer-info h2 {
+  margin: 0;
+  margin-bottom: 20px;
+  color: #FFFFFF;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 16px;
+  grid-column: 1/-1;
+}
+
+.footer-info__item {
+  margin-bottom: 10px;
+}
+
+.footer-info__link {
+  font-family: "PT Mono";
+  font-size: 16px;
+  line-height: 135%;
+  color: #FFFFFF;
+  opacity: 0.7;
+}
+
 .features {
   padding: 120px 0 60px;
 }
@@ -1089,7 +1114,7 @@ button,
 
 .intro__container {
   padding: 205px 0 280px;
-  width: 70%;
+  max-width: 970px;
 }
 
 .intro__info {
@@ -1125,6 +1150,15 @@ button,
 .logo {
   width: 215px;
   cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .logo svg {
@@ -1295,46 +1329,24 @@ button,
 }
 
 .header__container {
-  width: 95%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 27% auto 27%;
+  grid-template-columns: 27% auto 27%;
+  -webkit-column-gap: 4%;
+  -moz-column-gap: 4%;
+  column-gap: 4%;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  gap: 10px;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
   color: #E5E5E5;
-}
-
-.header__logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
 }
 
 .header__info {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (225px)[2];
-  grid-template-columns: repeat(2, 225px);
-  gap: 15px 30px;
-  grid-auto-flow: dense;
-  -webkit-box-align: start;
-  -ms-flex-align: start;
-  align-items: flex-start;
+  -ms-grid-columns: (1fr)[2];
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px 10%;
 }
 
 .header__info-link {
@@ -1344,7 +1356,8 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  gap: 10px;
+  -ms-flex-item-align: center;
+  align-self: center;
   color: #F2F5F6;
   font-family: "PT Mono";
   line-height: 18px;
@@ -1352,15 +1365,88 @@ button,
 
 .header__info-link svg {
   fill: #00B2FF;
+  margin-right: 15px;
 }
 
 .header__button {
+  margin-left: auto;
+  margin-right: 60px;
   padding: 10px 16px;
   max-width: 160px;
   font-size: 14px;
   line-height: 16px;
   border: 1px solid #F2F5F6;
   border-radius: 3px;
+}
+
+.footer {
+  background-color: #041827;
+}
+
+.footer__container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 327px auto 327px;
+  grid-template-columns: 327px auto 327px;
+  -webkit-column-gap: 48px;
+  -moz-column-gap: 48px;
+  column-gap: 48px;
+  padding: 50px 0 55px;
+}
+
+.footer__logo {
+  margin-bottom: 30px;
+}
+
+.footer ul {
+  margin: 0;
+  padding: 0;
+}
+
+.footer li {
+  list-style: none;
+}
+
+.footer__navigation {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+  grid-template-columns: repeat(2, 1fr);
+  -webkit-column-gap: 48px;
+  -moz-column-gap: 48px;
+  column-gap: 48px;
+}
+
+.socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  max-width: 150px;
+  margin-left: 10px;
+}
+
+.socials__link {
+  width: 40px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 /* @mixin hover-focus {
@@ -1412,18 +1498,6 @@ button,
 }
 
 @media (max-width: 1023px) {
-  .header {
-    padding: 20px 0 10px;
-    min-height: 70px;
-  }
-
-  .header__info {
-    padding: 10px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-
   .header__info-link {
     padding: 10px;
   }
@@ -1440,9 +1514,5 @@ button,
 @media (max-width: 320px) {
   .logo__text {
     display: none;
-  }
-
-  .header {
-    min-height: 70px;
   }
 }

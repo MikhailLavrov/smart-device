@@ -68,9 +68,13 @@
 .form__submit label {
   display: grid;
   grid-template-columns: 15px auto;
-  align-items: center;
   gap: 11px;
   box-sizing: border-box;
+}
+
+.form__submit label > input,
+.form__submit label > span {
+  align-self: center;
 }
 
 // дефолтный чекбокс

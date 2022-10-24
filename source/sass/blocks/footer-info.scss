@@ -1,0 +1,23 @@
+.footer-info h2 {
+  margin: 0;
+  margin-bottom: 20px;
+  color: $text-color-white;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 16px;
+  grid-column: 1/-1;
+}
+
+.footer-info__item {
+  margin-bottom: 10px;
+}
+
+.footer-info__link {
+  font-family: 'PT Mono';
+  font-size: 16px;
+  line-height: 135%;
+  color: $text-color-white;
+  opacity: 0.7;
+}
