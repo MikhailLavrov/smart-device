@@ -17,6 +17,7 @@ html {
   font-family: $ff-roboto-condensed;
   font-size: 16px;
   color: $text-color-dark;
+  scroll-behavior: smooth;
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

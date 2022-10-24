@@ -6,10 +6,11 @@
 
 .form input,
 .form textarea,
+.form textarea::placeholder,
 .form input::placeholder {
   font-family: 'PT Mono';
   color: $text-color-white;
-  line-height: 22px;
+  line-height: 21px;
 }
 
 .form input,
@@ -20,18 +21,18 @@
   border-radius: 3px;
 }
 
+.form input {
+  padding: 15px;
+}
+
 .form textarea {
-  width: 100%;
   min-height: 155px;
+  padding: 25px 15px;
   overflow: hidden;
+  grid-column: 1/-1;
 }
 
-.form__text {
-  display: flex;
-  flex-direction: column;
-}
-
-.form__text h3 {
+.form legend {
   margin: 0;
   margin-bottom: 15px;
   font-weight: 400;
@@ -40,10 +41,68 @@
   color: $text-color-white;
 }
 
-.form__text p {
+.form p {
   margin: 0;
   margin-bottom: 35px;
   font-family: 'PT Mono';
   line-height: 22px;
   color: $text-color-white;
+}
+
+.form__input,
+.form__submit {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px 30px;
+}
+
+.form__input {
+  margin-bottom: 35px;
+}
+
+.form__button {
+  padding: 15px;
+  border-radius: 3px;
+}
+
+.form__submit label {
+  display: grid;
+  grid-template-columns: 15px auto;
+  align-items: center;
+  gap: 11px;
+  box-sizing: border-box;
+}
+
+// дефолтный чекбокс
+.form__checkbox {
+  position: absolute;
+
+  opacity: 0;
+  z-index: -1;
+
+  &:checked + .form__checkbox-mark {
+    background: url("data:image/svg+xml,%3Csvg width='9' height='6' viewBox='0 0 9 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.988525 2.33333L3.7778 5L7.96171 1' stroke='white'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+// кастомный чекбокс
+.form__checkbox-mark {
+  width: 15px;
+  height: 15px;
+  background-color: transparent;
+
+  border: 1px solid $base-color-white;
+  border-radius: 2px;
+  box-sizing: border-box;
+}
+
+// текст к чекбоксу
+.form__checkbox-name {
+  font-family: 'PT Mono';
+  font-size: 14px;
+  line-height: 16px;
+  color: $text-color-white;
+  opacity: 0.8;
 }

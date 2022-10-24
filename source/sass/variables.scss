@@ -12,12 +12,14 @@ $text-color-white: #FFFFFF;
 $black-pearl: #041427;
 $whisper: #EBEBEB;
 $alice-blue: #F8FDFF;
+$cerulean: #026593;
 $primary-darker-1: rgba(4, 24, 39, 0.5);
 $primary-darker-2: rgba(4, 20, 39, 0.15);
 
 // Gradients
 $intro-gradient: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%);
-// $header-gradient: linear-gradient(180deg, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
+$products-gradient: linear-gradient($primary-darker-1, $primary-darker-1);
+$connection-gradient: linear-gradient(139deg, $cerulean 34%, $base-color-primary 34%);
 
 // Typography
 $ff-pt-mono: "PT Mono", "Times New Roman", serif;

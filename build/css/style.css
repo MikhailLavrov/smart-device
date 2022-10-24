@@ -436,6 +436,7 @@ html {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 16px;
   color: #041827;
+  scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
@@ -625,14 +626,21 @@ button,
 
 .container {
   width: 100%;
-  max-width: 1024px;
+  max-width: 1260px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 .button {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   border: none;
   cursor: pointer;
   text-transform: uppercase;
@@ -700,14 +708,29 @@ button,
 .products__item a {
   padding: 50px 40px;
   min-height: 650px;
-  display: inline-block;
-  width: 100%;
   height: 100%;
+  width: 100%;
+  display: inline-block;
+  position: relative;
   font-size: 20px;
   line-height: 30px;
   color: #FFFFFF;
-  background: url("../../img/main-prod.jpg") no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url("../../img/main-prod.jpg") no-repeat;
+  background: -o-linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../../img/main-prod.jpg") no-repeat;
+  background: linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../../img/main-prod.jpg") no-repeat;
   background-size: cover;
+}
+
+.products__item a::before {
+  position: absolute;
+  content: "";
+  width: 60px;
+  height: 60px;
+  bottom: 0;
+  right: 0;
+  background: url("data:image/svg+xml,%3Csvg width='5' height='10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M.476196 8.80957 4.28572 5.00005.476196 1.19052' stroke='%23fff' stroke-linejoin='round'/%3E%3C/svg%3E"), #00B2FF;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .products__item:nth-child(1) a {
@@ -723,8 +746,10 @@ button,
 }
 
 .connection {
-  background-color: #00B2FF;
   padding: 170px 0 250px;
+  background-color: #00B2FF;
+  background: -o-linear-gradient(311deg, #026593 34%, #00B2FF 34%);
+  background: linear-gradient(139deg, #026593 34%, #00B2FF 34%);
 }
 
 .connection__container {
@@ -757,42 +782,47 @@ button,
 
 .form input,
 .form textarea,
+.form textarea::-webkit-input-placeholder,
 .form input::-webkit-input-placeholder {
   font-family: "PT Mono";
   color: #FFFFFF;
-  line-height: 22px;
+  line-height: 21px;
 }
 
 .form input,
 .form textarea,
+.form textarea::-moz-placeholder,
 .form input::-moz-placeholder {
   font-family: "PT Mono";
   color: #FFFFFF;
-  line-height: 22px;
+  line-height: 21px;
 }
 
 .form input,
 .form textarea,
+.form textarea:-ms-input-placeholder,
 .form input:-ms-input-placeholder {
   font-family: "PT Mono";
   color: #FFFFFF;
-  line-height: 22px;
+  line-height: 21px;
 }
 
 .form input,
 .form textarea,
+.form textarea::-ms-input-placeholder,
 .form input::-ms-input-placeholder {
   font-family: "PT Mono";
   color: #FFFFFF;
-  line-height: 22px;
+  line-height: 21px;
 }
 
 .form input,
 .form textarea,
+.form textarea::placeholder,
 .form input::placeholder {
   font-family: "PT Mono";
   color: #FFFFFF;
-  line-height: 22px;
+  line-height: 21px;
 }
 
 .form input,
@@ -803,23 +833,18 @@ button,
   border-radius: 3px;
 }
 
+.form input {
+  padding: 15px;
+}
+
 .form textarea {
-  width: 100%;
   min-height: 155px;
+  padding: 25px 15px;
   overflow: hidden;
+  grid-column: 1/-1;
 }
 
-.form__text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.form__text h3 {
+.form legend {
   margin: 0;
   margin-bottom: 15px;
   font-weight: 400;
@@ -828,12 +853,73 @@ button,
   color: #FFFFFF;
 }
 
-.form__text p {
+.form p {
   margin: 0;
   margin-bottom: 35px;
   font-family: "PT Mono";
   line-height: 22px;
   color: #FFFFFF;
+}
+
+.form__input,
+.form__submit {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px 30px;
+}
+
+.form__input {
+  margin-bottom: 35px;
+}
+
+.form__button {
+  padding: 15px;
+  border-radius: 3px;
+}
+
+.form__submit label {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 15px auto;
+  grid-template-columns: 15px auto;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 11px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.form__checkbox {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+.form__checkbox:checked + .form__checkbox-mark {
+  background: url("data:image/svg+xml,%3Csvg width='9' height='6' viewBox='0 0 9 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.988525 2.33333L3.7778 5L7.96171 1' stroke='white'/%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.form__checkbox-mark {
+  width: 15px;
+  height: 15px;
+  background-color: transparent;
+  border: 1px solid #FFFFFF;
+  border-radius: 2px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.form__checkbox-name {
+  font-family: "PT Mono";
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFFFFF;
+  opacity: 0.8;
 }
 
 .about {
@@ -1003,10 +1089,10 @@ button,
 
 .intro__container {
   padding: 205px 0 280px;
+  width: 70%;
 }
 
 .intro__info {
-  max-width: 720px;
   margin: 0 auto;
 }
 
@@ -1031,6 +1117,7 @@ button,
 }
 
 .intro__link {
+  max-width: 410px;
   padding: 15px 25px;
   border-radius: 3px;
 }
@@ -1208,6 +1295,7 @@ button,
 }
 
 .header__container {
+  width: 95%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1242,10 +1330,7 @@ button,
   display: grid;
   -ms-grid-columns: (225px)[2];
   grid-template-columns: repeat(2, 225px);
-  -webkit-column-gap: 30px;
-  -moz-column-gap: 30px;
-  column-gap: 30px;
-  row-gap: 15px;
+  gap: 15px 30px;
   grid-auto-flow: dense;
   -webkit-box-align: start;
   -ms-flex-align: start;

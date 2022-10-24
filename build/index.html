@@ -127,35 +127,29 @@
               </picture>
             </div>
             <div class="form">
-              <div class="form__text">
-                <h3>Остались вопросы? Задайте их нам!</h3>
-                <p>Мы проконсультируем Вас бесплатно</p>
-              </div>
               <form action="https://echo.htmlacademy.ru/" method="get">
                 <fieldset>
-                  <legend class="visually-hidden">Поля для заполнения.</legend>
-                  <label>
-                    <input type="text" placeholder="Имя">
-                  </label>
-                  <label>
-                    <input type="text" placeholder="Телефон">
-                  </label>
-                  <label>
-                    <textarea placeholder="Ваш вопрос">
-                  </label>
-                </fieldset>
-                <fieldset>
-                  <legend class="visually-hidden">Кнопка и согласие на отправку.</legend>
-                  <button class="button button--dark" type="submit">Задать вопрос</button>
-                  <label>
-                    <input type="checkbox" name="agreement" value="agreement" checked>
-                    <span class="form__agreement-mark"></span>
-                    <span class="form__agreement-name">Я согласен на обработку персональных данных</span>
-                  </label>
+                  <legend>Остались вопросы? Задайте их нам!</legend>
+                  <p>Мы проконсультируем Вас бесплатно</p>
+                  <div class="form__input">
+                    <label class="visually-hidden" for="name">Имя.</label>
+                    <input type="text" id="name" placeholder="Имя">
+                    <label class="visually-hidden" for="phone">Телефон.</label>
+                    <input type="text" id="phone" placeholder="Телефон">
+                    <label class="visually-hidden" for="question">Ваш вопрос.</label>
+                    <textarea id="question" placeholder="Ваш вопрос"></textarea>
+                  </div>
+                  <div class="form__submit">
+                    <button class="form__button button button--dark" type="submit">Задать вопрос</button>
+                    <label>
+                      <input class="form__checkbox" type="checkbox" id="agreement" name="agreement" checked>
+                      <span class="form__checkbox-mark"></span>
+                      <span class="form__checkbox-name">Я согласен на обработку персональных данных</span>
+                    </label>
+                  </div>
                 </fieldset>
               </form>
             </div>
-
           </div>
         </section>
       </main>
