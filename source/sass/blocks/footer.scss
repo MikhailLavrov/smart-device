@@ -1,29 +1,25 @@
 .footer {
+  padding-top: 50px;
+  padding-bottom: 55px;
+
   background-color: $base-color-dark;
+  box-sizing: border-box;
 }
 
 .footer__container {
   display: grid;
-  grid-template-columns: 327px auto 327px;
+  grid-template-columns: 1fr auto 1fr;
   column-gap: 48px;
-  padding: 50px 0 55px;
+  box-sizing: border-box;
 }
 
 .footer__logo {
   margin-bottom: 30px;
 }
 
-.footer ul {
-  margin: 0;
-  padding: 0;
-}
-
-.footer li {
-  list-style: none;
-}
-
 .footer__navigation {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 48px;
+  box-sizing: border-box;
 }

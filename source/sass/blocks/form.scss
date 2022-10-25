@@ -1,6 +1,7 @@
 .form fieldset {
   margin: 0;
   padding: 0;
+
   border: none;
 }
 
@@ -9,16 +10,17 @@
 .form textarea::placeholder,
 .form input::placeholder {
   font-family: 'PT Mono';
-  color: $text-color-white;
   line-height: 21px;
+  color: $text-color-white;
 }
 
 .form input,
 .form textarea {
   padding: 0;
-  background-color: $primary-darker-2;
+
   border: none;
   border-radius: 3px;
+  background-color: $primary-darker-2;
 }
 
 .form input {
@@ -26,24 +28,27 @@
 }
 
 .form textarea {
-  min-height: 155px;
   padding: 25px 15px;
-  overflow: hidden;
+  min-height: 155px;
   grid-column: 1/-1;
+
+  overflow: hidden;
 }
 
 .form legend {
   margin: 0;
   margin-bottom: 15px;
-  font-weight: 400;
+
   font-size: 36px;
   line-height: 51px;
+  font-weight: 400;
   color: $text-color-white;
 }
 
 .form p {
   margin: 0;
   margin-bottom: 35px;
+
   font-family: 'PT Mono';
   line-height: 22px;
   color: $text-color-white;
@@ -62,6 +67,7 @@
 
 .form__button {
   padding: 15px;
+
   border-radius: 3px;
 }
 
@@ -95,8 +101,8 @@
 .form__checkbox-mark {
   width: 15px;
   height: 15px;
-  background-color: transparent;
 
+  background-color: transparent;
   border: 1px solid $base-color-white;
   border-radius: 2px;
   box-sizing: border-box;

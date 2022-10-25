@@ -15,7 +15,9 @@
 
 .features__item {
   padding: 40px 45px 35px;
+
   list-style: none;
+
   box-shadow:
     inset 5px 0px 0px 0px $base-color-primary,
     inset 0px 0px 0px 1px $whisper;
@@ -25,10 +27,11 @@
 
   &:hover,
   &:focus {
-    background-color: $base-color-primary;
     color: $text-color-light;
-    border: none;
+
+    background-color: $base-color-primary;
     box-shadow: none;
+    border: none;
 
     & svg {
       fill: $text-color-light;

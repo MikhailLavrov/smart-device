@@ -13,18 +13,21 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
   transform: rotate(-180deg);
   overflow: hidden;
 }
 
 .about__decor span {
-  background-image: url("../../img/about-bg.webp");
   font-weight: 700;
   font-size: 156px;
   line-height: 220px;
-  writing-mode: vertical-rl;
-  background-clip: text;
   color: transparent;
+  writing-mode: vertical-rl;
+
+  background-image: url("../../img/about-bg.webp");
+  background-clip: text;
+
   user-select: none;
 }
 
@@ -44,6 +47,7 @@
 
 .about__info p {
   margin: 10px 0;
+
   font-family: 'PT Mono';
   line-height: 22px;
 }
@@ -52,8 +56,10 @@
   margin-top: 15px;
   width: 180px;
   padding: 13px;
+
   display: flex;
   justify-content: center;
+  
   font-size: 14px;
   line-height: 16px;
 }

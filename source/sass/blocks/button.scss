@@ -5,31 +5,32 @@
 
   border: none;
   cursor: pointer;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
+
   font-family: 'Roboto Condensed';
   font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 
   &--blue {
-    background-color: $base-color-primary;
     color: $text-color-light;
+    background-color: $base-color-primary;
   }
 
   &--light {
-    background-color: $alice-blue;
     color: $text-color-alt;
+    background-color: $alice-blue;
     border: 1px solid $base-color-primary;
     border-radius: 3px;
   }
 
   &--dark {
-    background-color: $base-color-dark;
     color: $text-color-light;
+    background-color: $base-color-dark;
   }
 
   &--darker {
-    background-color: $black-pearl;
     color: $text-color-white;
+    background-color: $black-pearl;
   }
 
   &:disabled {

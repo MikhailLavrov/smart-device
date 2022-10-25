@@ -1,17 +1,26 @@
 .footer-info h2 {
   margin: 0;
   margin-bottom: 20px;
-  color: $text-color-white;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  font-weight: 400;
+
+  grid-column: 1/-1;
+
   font-size: 15px;
   line-height: 16px;
-  grid-column: 1/-1;
+  font-weight: 400;
+  color: $text-color-white;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.footer-info__list {
+  margin: 0;
+  padding: 0;
 }
 
 .footer-info__item {
   margin-bottom: 10px;
+  list-style: none;
+  box-sizing: border-box;
 }
 
 .footer-info__link {

@@ -17,10 +17,10 @@ $primary-darker-1: rgba(4, 24, 39, 0.5);
 $primary-darker-2: rgba(4, 20, 39, 0.15);
 
 // Gradients & shadows
+$header-gradient: linear-gradient(180deg, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
 $intro-gradient: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%);
 $products-gradient: linear-gradient($primary-darker-1, $primary-darker-1);
 $connection-gradient: linear-gradient(139deg, $cerulean 34%, $base-color-primary 34%);
-$header-shadow: 0 0 15px 15px $base-color-dark;
 
 // Typography
 $ff-pt-mono: "PT Mono", "Times New Roman", serif;
@@ -28,8 +28,9 @@ $ff-roboto-condensed: "Roboto Condensed", "Arial", sans-serif;
 $ff-roboto: "Roboto", "Arial", sans-serif;
 
 // Viewports
-$mobile-width: 320px;
-$mobile-width-only: 767px;
-$tablet-width: 768px;
-$tablet-width-only: 1023px;
-$desktop-width: 1024px;
+$vp-768: 768px;
+$vp-1024: 1024px;
+$vp-1220: 1220px;
+
+// Indents
+$base-indent: 50px;

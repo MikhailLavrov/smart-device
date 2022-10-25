@@ -1,5 +1,7 @@
 .intro {
+  padding: 205px 0 280px;
   min-height: 778px;
+
   background-color: $base-color-dark;
   background:
     $intro-gradient,
@@ -7,36 +9,49 @@
 }
 
 .intro__container {
-  padding: 205px 0 280px;
-  max-width: 970px;
+  padding: 0 $base-indent;
 }
 
 .intro__info {
   margin: 0 auto;
+  margin-left: 11%;
 }
 
-.intro h2 {
+.intro__text h2 {
   margin: 0;
   margin-bottom: 40px;
+
   font-weight: 700;
   font-size: 80px;
   line-height: 94px;
   letter-spacing: 0.07em;
   text-transform: uppercase;
   color: $text-color-light;
+
+  @include vp-1023 {
+    font-size: 64px;
+    line-height: 75px;
+    margin-bottom: 20px;
+  }
 }
 
-.intro p {
+.intro__text p {
   margin: 0;
   margin-bottom: 40px;
+
   font-family: 'PT Mono';
   font-size: 22px;
   line-height: 155%;
   color: $text-color-light;
+
+  @include vp-1023 {
+    margin-bottom: 50px;
+  }
 }
 
 .intro__link {
   max-width: 410px;
   padding: 15px 25px;
+
   border-radius: 3px;
 }

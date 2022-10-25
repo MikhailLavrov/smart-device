@@ -13,7 +13,7 @@ const sass = gulpSass(dartSass);
 const compileStyles = () =>
   gulp.src('source/sass/style.scss', {sourcemaps: true})
       .pipe(plumber())
-      .pipe(sass())
+      .pipe(sass().on('error', sass.logError))
       .pipe(postcss([autoprefixer({
         grid: true,
       })]))
