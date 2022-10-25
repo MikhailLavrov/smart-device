@@ -10,7 +10,7 @@
 .form textarea::placeholder,
 .form input::placeholder {
   font-family: 'PT Mono';
-  line-height: 21px;
+  line-height: 22px;
   color: $text-color-white;
 }
 
@@ -33,6 +33,10 @@
   grid-column: 1/-1;
 
   overflow: hidden;
+
+  @include vp-1023 {
+    padding: 32px 15px;
+  }
 }
 
 .form legend {
@@ -43,6 +47,10 @@
   line-height: 51px;
   font-weight: 400;
   color: $text-color-white;
+
+  @include vp-1023 {
+    margin-bottom: 10px;
+  }
 }
 
 .form p {
@@ -52,6 +60,10 @@
   font-family: 'PT Mono';
   line-height: 22px;
   color: $text-color-white;
+
+  @include vp-1023 {
+    margin-bottom: 25px;
+  }
 }
 
 .form__input,
@@ -69,6 +81,10 @@
   padding: 15px;
 
   border-radius: 3px;
+
+  @include vp-1023 {
+    max-width: 265px;
+  }
 }
 
 .form__submit label {

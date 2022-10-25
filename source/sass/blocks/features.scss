@@ -1,5 +1,9 @@
 .features {
   padding: 120px 0 60px;
+
+  @include vp-1023 {
+    padding: 80px 0 40px;
+  }
 }
 
 .features__list {

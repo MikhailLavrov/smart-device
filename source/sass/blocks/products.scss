@@ -2,6 +2,10 @@
   padding: 70px 0 140px;
 
   background-color: $base-color-dark;
+
+  @include vp-1023 {
+    padding: 60px 0 75px;
+  }
 }
 
 .products h2 {
@@ -22,9 +26,15 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 85px;
   box-sizing: border-box;
+
+  @include vp-1023 {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
 }
 
-.products__item a {
+.products__link {
   padding: 50px 40px;
 
   min-height: 650px;
@@ -56,16 +66,21 @@
     background-repeat: no-repeat;
     background-position: center;
   }
+
+  @include vp-1023 {
+    padding: 40px 45px;
+    min-height: 250px;
+  }
 }
 
-.products__item:nth-child(1) a {
+.products__item:nth-child(1) .products__link {
   background-position: 15% 75%;
 }
 
-.products__item:nth-child(2) a {
+.products__item:nth-child(2) .products__link {
   background-position: 50% 75%;
 }
 
-.products__item:nth-child(3) a {
+.products__item:nth-child(3) .products__link {
   background-position: 85% 75%;
 }

@@ -1,18 +1,33 @@
 .connection {
   padding: 170px 0 250px;
-  
-  background-color: $base-color-primary;
+
+  scroll-margin-top: 100px;
+
   background: $connection-gradient;
+
+    @include vp-1023 {
+      padding: 50px 0 125px;
+      background: $base-color-primary;
+    }
 }
 
 .connection__container {
   display: grid;
-  grid-template-columns: auto 580px;
-  column-gap: 120px;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 10%;
+
+  @include vp-1023 {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .connection__image {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @include vp-1023 {
+    display: none;
+  }
 }
