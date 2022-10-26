@@ -1056,6 +1056,10 @@ button,
   line-height: 16px;
 }
 
+.hidden {
+  display: none;
+}
+
 .footer-info h2 {
   margin: 0;
   margin-bottom: 20px;

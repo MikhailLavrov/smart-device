@@ -100,7 +100,13 @@
               <h3>О компании</h3>
               <p>Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.</p>
               <p>Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. <span>Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.</span></p>
-              <button class="about__button button button--light" type="button">Подробнее</button>
+
+              <div class="hidden" id="more">
+                <p>Smart Device - это команда профессионалов. Через нас прошло более 1 000 000 клиентов, 70% из которых продолжают сотрудничество по сей день. На данный момент насчитывается более 14 офисов по всей стране и 20 городов присутствия.</p>
+                <p>Мы стремимся к постоянному развитию и повышению уровня качества продукции, производимой внутри компании. Использование инновационных технологий помогает экономить деньги и время наших клиентов</p>
+              </div>
+
+              <button class="about__button button button--light" type="button" id="moreButton">Подробнее</button>
             </div>
           </div>
         </section>
@@ -133,22 +139,22 @@
               </picture>
             </div>
             <div class="form">
-              <form action="https://echo.htmlacademy.ru/" method="get">
+              <form action="https://echo.htmlacademy.ru/" method="get" id="form-index">
                 <fieldset>
                   <legend>Остались вопросы? Задайте их нам!</legend>
                   <p>Мы проконсультируем Вас бесплатно</p>
                   <div class="form__input">
                     <label class="visually-hidden" for="name">Имя.</label>
-                    <input type="text" id="name" placeholder="Имя">
+                    <input type="text" id="name" placeholder="Имя" name="name" required>
                     <label class="visually-hidden" for="phone">Телефон.</label>
-                    <input type="text" id="phone" placeholder="Телефон">
+                    <input type="text" id="phone" placeholder="Телефон" name="phone" required>
                     <label class="visually-hidden" for="question">Ваш вопрос.</label>
-                    <textarea id="question" placeholder="Ваш вопрос"></textarea>
+                    <textarea id="question" placeholder="Ваш вопрос" name="text"></textarea>
                   </div>
                   <div class="form__submit">
-                    <button class="form__button button button--dark" type="submit">Задать вопрос</button>
+                    <button class="form__button button button--dark" type="submit" form="form-index">Задать вопрос</button>
                     <label>
-                      <input class="form__checkbox" type="checkbox" id="agreement" name="agreement" checked>
+                      <input class="form__checkbox" type="checkbox" id="agreement" name="agreement" checked required>
                       <span class="form__checkbox-mark"></span>
                       <span class="form__checkbox-name">Я согласен на обработку персональных данных</span>
                     </label>
@@ -244,28 +250,28 @@
       </footer>
     </div>
 
-    <!-- Модалки -->
+    <!-- Модалка -->
     <div class="modal modal--preload" data-modal="feedback">
       <div class="modal__wrapper">
         <div class="modal__overlay" data-close-modal></div>
         <div class="modal__content">
           <div class="form form--modal">
-            <form action="https://echo.htmlacademy.ru/" method="get">
+            <form action="https://echo.htmlacademy.ru/" method="get" id="form-modal">
               <fieldset>
                 <legend>Закажите звонок</legend>
                 <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
                 <div class="form__input">
                   <label class="visually-hidden" for="name">Имя.</label>
-                  <input type="text" id="name" placeholder="Имя">
+                  <input type="text" id="name" placeholder="Имя" name="name" required>
                   <label class="visually-hidden" for="phone">Телефон.</label>
-                  <input type="text" id="phone" placeholder="Телефон">
+                  <input type="text" id="phone" placeholder="Телефон" name="phone" required>
                   <label class="visually-hidden" for="question">Ваш вопрос.</label>
-                  <textarea id="question" placeholder="Ваш вопрос"></textarea>
+                  <textarea id="question" placeholder="Ваш вопрос" name="text"></textarea>
                 </div>
                 <div class="form__submit">
                   <button class="form__button button button--dark" type="submit">Отправить</button>
                   <label>
-                    <input class="form__checkbox" type="checkbox" id="agreement" name="agreement" checked>
+                    <input class="form__checkbox" type="checkbox" id="agreement" name="agreement" checked required>
                     <span class="form__checkbox-mark"></span>
                     <span class="form__checkbox-name">Я согласен на обработку персональных данных</span>
                   </label>
@@ -273,7 +279,7 @@
               </fieldset>
             </form>
           </div>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
+          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal form="form-modal">
             <svg width="20" height="20">
               <use xlink:href="img/sprite_auto.svg#icon-close"></use>
             </svg>
@@ -281,8 +287,6 @@
         </div>
       </div>
     </div>
-
-    <!-- <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
       <div class="modal__wrapper">
         <div class="modal__overlay" data-close-modal></div>
         <div class="modal__content">

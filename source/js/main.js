@@ -1,6 +1,19 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 
+let text = document.getElementById('more');
+let button = document.getElementById('moreButton');
+
+// Показать/скрыть текст в блоке About
+button.addEventListener('click', function () {
+  text.classList.toggle('hidden');
+  if (text.classList.contains('hidden')) {
+    button.innerHTML = 'Подробнее';
+  } else {
+    button.innerHTML = 'Скрыть';
+  }
+});
+
 window.addEventListener('DOMContentLoaded', () => {
   // Utils
   iosVhFix();
