@@ -21,6 +21,8 @@
   align-items: flex-start;
 
   &--big {
+    margin-bottom: 5px;
+
     font-weight: 700;
     font-size: 25px;
     line-height: 29px;
@@ -35,5 +37,11 @@
     line-height: 14px;
     color: $text-color-white;
     opacity: 0.7;
+  }
+
+  &--header {
+    @include vp-767 {
+      display: none;
+    }
   }
 }

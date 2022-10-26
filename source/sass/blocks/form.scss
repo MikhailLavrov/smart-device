@@ -37,6 +37,10 @@
   @include vp-1023 {
     padding: 32px 15px;
   }
+
+  @include vp-767 {
+    min-height: 180px;
+  }
 }
 
 .form legend {
@@ -51,6 +55,12 @@
   @include vp-1023 {
     margin-bottom: 10px;
   }
+
+  @include vp-767 {
+    margin-bottom: 20px;
+    font-size: 30px;
+    line-height: 140.62%;
+  }
 }
 
 .form p {
@@ -64,6 +74,12 @@
   @include vp-1023 {
     margin-bottom: 25px;
   }
+
+  @include vp-767 {
+    font-size: 14px;
+    line-height: 134.4%;
+    margin-bottom: 40px;
+  }
 }
 
 .form__input,
@@ -71,19 +87,33 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px 30px;
+
+  @include vp-767 {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
 }
 
 .form__input {
   margin-bottom: 35px;
+
+  @include vp-767 {
+    margin-bottom: 30px;
+    gap: 20px;
+  }
 }
 
 .form__button {
-  padding: 15px;
-
-  border-radius: 3px;
+  padding: 15px 25px;
 
   @include vp-1023 {
     max-width: 265px;
+  }
+
+  @include vp-767 {
+    max-width: 270px;
+    line-height: 19px;
   }
 }
 

@@ -11,10 +11,19 @@
     min-height: 640px;
     padding: 180px 0 205px;
   }
+
+  @include vp-767 {
+    min-height: 560px;
+    padding: 155px 0 190px;
+  }
 }
 
 .intro__container {
   padding: 0 $base-indent;
+
+  @include vp-767 {
+    padding: 0 $alt-indent;
+  }
 }
 
 .intro__info {
@@ -42,6 +51,11 @@
     line-height: 75px;
     margin-bottom: 20px;
   }
+
+  @include vp-767 {
+    font-size: 36px;
+    line-height: 42px;
+  }
 }
 
 .intro__text p {
@@ -56,15 +70,46 @@
   @include vp-1023 {
     margin-bottom: 50px;
   }
+
+  @include vp-767 {
+    font-size: 14px;
+    line-height: 155%;
+
+    & > br {
+      display: none;
+    }
+  }
 }
 
 .intro__link {
   max-width: 410px;
   padding: 15px 25px;
 
-  border-radius: 3px;
+  font-size: 18px;
+  line-height: 21px;
+
+  & span:last-child {
+    display: none;
+  }
 
   @include vp-1023 {
     margin-left: 7%;
+  }
+
+  @include vp-767 {
+    margin-left: 0;
+    padding: 10px 30px;
+    max-width: 270px;
+
+    font-size: 14px;
+    line-height: 16px;
+
+    & span:last-child {
+      display: block;
+    }
+
+    & span:first-child {
+      display: none;
+    }
   }
 }

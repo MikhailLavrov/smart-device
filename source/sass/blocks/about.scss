@@ -4,27 +4,39 @@
   @include vp-1023 {
     padding: 40px 0 80px;
   }
+
+  @include vp-767 {
+    padding: 25px 0 80px;
+  }
 }
 
 .about__container {
   display: grid;
   grid-template-columns: 150px auto;
   column-gap: 100px;
-  align-items: flex-start;
 
   @include vp-1023 {
     column-gap: 20px;
+  }
+
+  @include vp-767 {
+    display: flex;
+    flex-direction: column;
   }
 }
 
 .about__decor {
   display: flex;
   flex-direction: column;
-  // justify-content: center;
   align-items: center;
+  align-self: flex-start;
 
   transform: rotate(-180deg);
   overflow: hidden;
+
+  @include vp-767 {
+    display: none;
+  }
 }
 
 .about__decor span {
@@ -45,6 +57,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-self: flex-start;
 }
 
 .about__info h3 {
@@ -54,6 +67,11 @@
   font-size: 36px;
   line-height: 51px;
   font-weight: 400;
+
+  @include vp-767 {
+    font-size: 28px;
+    line-height: 140.62%;
+  }
 }
 
 .about__info p {
@@ -61,6 +79,15 @@
 
   font-family: 'PT Mono';
   line-height: 22px;
+
+  @include vp-767 {
+    font-size: 14px;
+    line-height: 134.4%;
+
+    & span {
+      display: none;
+    }
+  }
 }
 
 .about__button {
@@ -76,5 +103,10 @@
 
   @include vp-1023 {
     margin-top: 10px;
+  }
+
+  @include vp-767 {
+    padding: 8px 15px 10px;
+    width: 160px;
   }
 }
