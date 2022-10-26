@@ -20,7 +20,7 @@
 
   border: none;
   border-radius: 3px;
-  background-color: $primary-darker-2;
+  background-color: $black-pearl-opacity;
 }
 
 .form input {
@@ -161,4 +161,40 @@
   line-height: 16px;
   color: $text-color-white;
   opacity: 0.8;
+}
+
+// Форма модального окна
+
+.form--modal legend {
+  font-size: 30px;
+  line-height: 140.62%;
+}
+
+.form--modal p {
+  margin-bottom: 40px;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.form--modal .form__input {
+  margin-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form--modal .form__submit {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form--modal .form__button {
+  @include vp-1023 {
+    max-width: 100%;
+  }
+
+  @include vp-767 {
+    max-width: 100%;
+  }
 }

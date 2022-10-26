@@ -1,5 +1,6 @@
 // Colors
 $base-color-dark: #041827;
+$base-color-dark-opacity: rgba($base-color-dark, 0.5);
 $base-color-light: #E5E5E5;
 $base-color-primary: #00B2FF;
 $base-color-white: #FFFFFF;
@@ -10,17 +11,16 @@ $text-color-alt: #00B2FF;
 $text-color-white: #FFFFFF;
 // Pallete
 $black-pearl: #041427;
+$black-pearl-opacity: rgba($black-pearl, 0.15);
 $whisper: #EBEBEB;
 $alice-blue: #F8FDFF;
-$cerulean: #026593;
-$primary-darker-1: rgba(4, 24, 39, 0.5);
-$primary-darker-2: rgba(4, 20, 39, 0.15);
+$modal-bg: rgba(#03101B, 0.7);
 
 // Gradients & shadows
-$header-gradient: linear-gradient(180deg, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
-$intro-gradient: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%);
-$products-gradient: linear-gradient($primary-darker-1, $primary-darker-1);
-$connection-gradient: linear-gradient(139deg, $cerulean 34%, $base-color-primary 34%);
+$header-gradient: linear-gradient(180deg, $base-color-dark 84.9%, transparent 100%);
+$intro-gradient: linear-gradient(180deg, rgba(#192024, 0.7) 71.72%, transparent 100%);
+$products-gradient: linear-gradient($base-color-dark-opacity, $base-color-dark-opacity);
+$connection-gradient: linear-gradient(139deg, #026593 34%, $base-color-primary 34%);
 
 // Typography
 $ff-pt-mono: "PT Mono", "Times New Roman", serif;
@@ -35,3 +35,12 @@ $vp-1220: 1220px;
 // Indents
 $base-indent: 50px;
 $alt-indent: 25px;
+
+// Animation
+$tf-default:                        ease;
+$trans-default:                     0.3s $tf-default;
+
+// если требуется изинг отличный от $tf-default, то переменную называем не цифрой
+$trans-modal:                       0.6s cubic-bezier(0.55, 0, 0.1, 1);
+
+$trans-600:                         0.6s $tf-default;

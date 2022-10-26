@@ -249,9 +249,32 @@
       <div class="modal__wrapper">
         <div class="modal__overlay" data-close-modal></div>
         <div class="modal__content">
-          <p class="modal__description">Обычная модалка</p>
+          <div class="form form--modal">
+            <form action="https://echo.htmlacademy.ru/" method="get">
+              <fieldset>
+                <legend>Закажите звонок</legend>
+                <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+                <div class="form__input">
+                  <label class="visually-hidden" for="name">Имя.</label>
+                  <input type="text" id="name" placeholder="Имя">
+                  <label class="visually-hidden" for="phone">Телефон.</label>
+                  <input type="text" id="phone" placeholder="Телефон">
+                  <label class="visually-hidden" for="question">Ваш вопрос.</label>
+                  <textarea id="question" placeholder="Ваш вопрос"></textarea>
+                </div>
+                <div class="form__submit">
+                  <button class="form__button button button--dark" type="submit">Отправить</button>
+                  <label>
+                    <input class="form__checkbox" type="checkbox" id="agreement" name="agreement" checked>
+                    <span class="form__checkbox-mark"></span>
+                    <span class="form__checkbox-name">Я согласен на обработку персональных данных</span>
+                  </label>
+                </div>
+              </fieldset>
+            </form>
+          </div>
           <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
+            <svg width="20" height="20">
               <use xlink:href="img/sprite_auto.svg#icon-close"></use>
             </svg>
           </button>
@@ -259,7 +282,7 @@
       </div>
     </div>
 
-    <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
+    <!-- <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
       <div class="modal__wrapper">
         <div class="modal__overlay" data-close-modal></div>
         <div class="modal__content">
@@ -271,9 +294,9 @@
           </button>
         </div>
       </div>
-    </div>
+    </div> -->
 
-    <script src="js/vendor.min.js"></script>
+    <!-- <script src="js/vendor.min.js"></script> -->
     <script src="js/main.min.js"></script>
   </body>
 </html>
