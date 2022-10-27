@@ -1,6 +1,7 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {initPhoneMask} from './utils/phone-mask';
+import {initAccordions} from './utils/init-accordion';
 
 let text = document.getElementById('more');
 let button = document.getElementById('moreButton');
@@ -9,6 +10,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // Utils
   iosVhFix();
   initPhoneMask();
+  initAccordions();
 
   // Show / hide
   button.addEventListener('click', function () {

@@ -634,6 +634,75 @@ button,
   width: 100%;
 }
 
+[data-accordion=element].is-active > [data-accordion=content] {
+  max-height: 100%;
+}
+
+[data-accordion=parent].no-transition [data-accordion=content] {
+  -webkit-transition: none;
+  -o-transition: none;
+  transition: none;
+}
+
+[data-accordion=content] {
+  max-height: 0;
+  -webkit-transition: max-height 0.3s;
+  -o-transition: max-height 0.3s;
+  transition: max-height 0.3s;
+  overflow: hidden;
+}
+
+.accordion__button {
+  margin-bottom: 20px;
+  padding: 0;
+  font-size: 15px;
+  line-height: 16px;
+  font-weight: 400;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: left;
+  letter-spacing: 0.05em;
+  background-color: transparent;
+  border: none;
+}
+
+.accordion__element--navigation {
+  width: 38.5%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.accordion__content--navigation {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+  grid-template-columns: repeat(2, 1fr);
+  -webkit-column-gap: 6.4%;
+  -moz-column-gap: 6.4%;
+  column-gap: 6.4%;
+}
+
+.accordion__list {
+  margin: 0;
+  padding: 0;
+}
+
+.accordion__item {
+  margin-bottom: 10px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+.accordion__link {
+  font-size: 16px;
+  line-height: 135%;
+  font-family: "PT Mono", "Times New Roman", serif;
+  color: #ffffff;
+  opacity: 0.7;
+}
+
 .button {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1061,38 +1130,6 @@ button,
   line-height: 16px;
 }
 
-.footer-info h2 {
-  margin: 0;
-  margin-bottom: 20px;
-  grid-column: 1/-1;
-  font-size: 15px;
-  line-height: 16px;
-  font-weight: 400;
-  color: #ffffff;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-}
-
-.footer-info__list {
-  margin: 0;
-  padding: 0;
-}
-
-.footer-info__item {
-  margin-bottom: 10px;
-  list-style: none;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-.footer-info__link {
-  font-family: "PT Mono", "Times New Roman", serif;
-  font-size: 16px;
-  line-height: 135%;
-  color: #ffffff;
-  opacity: 0.7;
-}
-
 .features {
   padding: 120px 0 60px;
 }
@@ -1499,19 +1536,6 @@ button,
   margin-bottom: 30px;
 }
 
-.footer__navigation {
-  max-width: 38.5%;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[2];
-  grid-template-columns: repeat(2, 1fr);
-  -webkit-column-gap: 6.4%;
-  -moz-column-gap: 6.4%;
-  column-gap: 6.4%;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
 .socials {
   margin: 0;
   margin-left: 10px;
@@ -1598,6 +1622,21 @@ button,
 }
 
 @media (max-width: 1023.9px) {
+  .accordion__element--navigation {
+    width: 100%;
+  }
+
+  .accordion__content--navigation {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
   .products {
     padding: 60px 0 75px;
   }
@@ -1754,17 +1793,6 @@ button,
     margin-bottom: 0;
   }
 
-  .footer__navigation {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    max-width: 100%;
-  }
-
   .socials {
     gap: 15px;
     margin-left: 0;
@@ -1773,6 +1801,21 @@ button,
 
 @media (max-width: 767.9px) {
   .container {
+    padding: 0 25px;
+  }
+
+  .accordion__button {
+    margin-bottom: 0;
+    padding: 20px 25px;
+    width: 100%;
+  }
+
+  .accordion__element {
+    border-bottom: 1px solid rgba(248, 253, 255, 0.7);
+  }
+
+  .accordion__list {
+    margin-top: -5px;
     padding: 0 25px;
   }
 
@@ -2003,17 +2046,6 @@ button,
     flex-direction: column;
     padding: 0;
     gap: 0;
-  }
-
-  .footer__links,
-  .footer__navigation,
-  .footer__contacts {
-    border-bottom: 1px solid rgba(248, 253, 255, 0.7);
-  }
-
-  .footer__navigation,
-  .footer__contacts {
-    padding: 20px 25px;
   }
 
   .footer__links {

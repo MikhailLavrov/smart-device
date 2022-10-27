@@ -8,13 +8,16 @@
 @import "global/utils";
 @import "global/container";
 
+// Utils
+@import "utils/data-accordion";
+@import "utils/accordion";
+
 // Blocks
 @import "blocks/button";
 @import "blocks/products";
 @import "blocks/connection";
 @import "blocks/form";
 @import "blocks/about";
-@import "blocks/footer-info";
 @import "blocks/features";
 @import "blocks/intro";
 @import "blocks/logo";
