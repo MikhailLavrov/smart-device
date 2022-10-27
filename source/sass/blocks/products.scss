@@ -65,6 +65,7 @@
   width: 100%;
 
   display: inline-block;
+  vertical-align: middle;
   position: relative;
 
   font-size: 20px;
@@ -73,7 +74,8 @@
 
   background:
     $products-gradient,
-    url("../../img/main-prod.jpg") no-repeat;
+    url("../../img/main-prod.jpg") no-repeat,
+    $base-color-dark;
   background-size: cover;
 
   &::before {

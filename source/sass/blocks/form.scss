@@ -9,7 +9,7 @@
 .form textarea,
 .form textarea::placeholder,
 .form input::placeholder {
-  font-family: 'PT Mono';
+  font-family: $ff-pt-mono;
   line-height: 22px;
   color: $text-color-white;
 }
@@ -67,7 +67,7 @@
   margin: 0;
   margin-bottom: 35px;
 
-  font-family: 'PT Mono';
+  font-family: $ff-pt-mono;
   line-height: 22px;
   color: $text-color-white;
 
@@ -156,7 +156,7 @@
 
 // текст к чекбоксу
 .form__checkbox-name {
-  font-family: 'PT Mono';
+  font-family: $ff-pt-mono;
   font-size: 14px;
   line-height: 16px;
   color: $text-color-white;

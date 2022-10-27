@@ -77,16 +77,18 @@
 .about__info p {
   margin: 10px 0;
 
-  font-family: 'PT Mono';
+  font-family: $ff-pt-mono;
   line-height: 22px;
 
   @include vp-767 {
     font-size: 14px;
     line-height: 134.4%;
+  }
+}
 
-    & span {
-      display: none;
-    }
+.about__info span {
+  @include vp-767 {
+    display: none;
   }
 }
 

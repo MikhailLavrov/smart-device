@@ -32,8 +32,8 @@
   list-style: none;
 
   box-shadow:
-    inset 5px 0px 0px 0px $base-color-primary,
-    inset 0px 0px 0px 1px $whisper;
+    inset 5px 0 0 0 $base-color-primary,
+    inset 0 0 0 1px $whisper;
   box-sizing: border-box;
   outline: none;
   transition: 200ms;
@@ -45,19 +45,21 @@
     background-color: $base-color-primary;
     box-shadow: none;
     border: none;
-
-    & svg {
-      fill: $text-color-light;
-    }
-
-    & h3 {
-      color: $text-color-light;
-    }
   }
 
   @include vp-767 {
     padding: 30px 30px 35px;
   }
+}
+
+.features__item:hover svg,
+.features__item:focus svg {
+  fill: $text-color-light;
+}
+
+.features__item:hover h3,
+.features__item:focus h3 {
+  color: $text-color-light;
 }
 
 .features__item svg {
@@ -85,7 +87,7 @@
   margin: 0;
 
   line-height: 135%;
-  font-family: 'PT Mono';
+  font-family: $ff-pt-mono;
 
   @include vp-767 {
     font-size: 14px;
