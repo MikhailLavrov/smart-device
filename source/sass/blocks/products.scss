@@ -1,5 +1,6 @@
 .products {
   padding: 70px 0 140px;
+  user-select: none;
 
   background-color: $base-color-dark;
 
@@ -71,6 +72,7 @@
   font-size: 20px;
   line-height: 30px;
   color: $text-color-white;
+  transition: 0.2s;
 
   background:
     $products-gradient,
@@ -109,6 +111,14 @@
     &::before {
       width: 40px;
       height: 40px;
+    }
+  }
+
+  @include hover-focus {
+    box-shadow: 0 0 30px 1px $base-color-primary-darker;
+
+    &::before {
+      background-color: $base-color-primary-darker;
     }
   }
 }

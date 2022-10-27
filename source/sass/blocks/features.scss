@@ -38,8 +38,7 @@
   outline: none;
   transition: 200ms;
 
-  &:hover,
-  &:focus {
+  @include hover-focus {
     color: $text-color-light;
 
     background-color: $base-color-primary;
@@ -52,14 +51,20 @@
   }
 }
 
-.features__item:hover svg,
-.features__item:focus svg {
-  fill: $text-color-light;
+.features__item {
+  @include hover-focus {
+    & svg {
+      fill: $text-color-light;
+    }
+  }
 }
 
-.features__item:hover h3,
-.features__item:focus h3 {
-  color: $text-color-light;
+.features__item {
+  @include hover-focus {
+    & h3 {
+      color: $text-color-light;
+    }
+  }
 }
 
 .features__item svg {

@@ -122,6 +122,11 @@
   grid-template-columns: 15px auto;
   gap: 11px;
   box-sizing: border-box;
+  cursor: pointer;
+
+  @include hover-focus {
+    opacity: 0.85;
+  }
 }
 
 .form__submit label > input,

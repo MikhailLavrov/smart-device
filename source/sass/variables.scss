@@ -3,6 +3,8 @@ $base-color-dark: #041827;
 $base-color-dark-opacity: rgba($base-color-dark, 0.5);
 $base-color-light: #e5e5e5;
 $base-color-primary: #00b2ff;
+$base-color-primary-lighter: #55ccff;
+$base-color-primary-darker: #009adc;
 $base-color-white: #ffffff;
 // Text-colors
 $text-color-light: #f2f5f6;
@@ -42,5 +44,4 @@ $trans-default:                     0.3s $tf-default;
 
 // если требуется изинг отличный от $tf-default, то переменную называем не цифрой
 $trans-modal:                       0.6s cubic-bezier(0.55, 0, 0.1, 1);
-
 $trans-600:                         0.6s $tf-default;

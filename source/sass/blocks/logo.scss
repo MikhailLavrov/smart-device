@@ -6,6 +6,12 @@
   justify-content: space-between;
 
   cursor: pointer;
+
+  @include hover-focus {
+    & svg {
+      fill: $base-color-primary-darker;
+    }
+  }
 }
 
 .logo svg {

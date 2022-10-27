@@ -4,37 +4,37 @@
 //   }
 // }
 
-// @mixin hover {
-//   @media (hover: hover) {
-//     &:hover:not(.focus-visible) {
-//       @content;
-//     }
-//   }
-// }
+@mixin hover {
+  @media (hover: hover) {
+    &:hover:not(.focus-visible) {
+      @content;
+    }
+  }
+}
 
-// @mixin focus {
-//   &.focus-visible:focus {
-//     @content;
-//   }
-// }
+@mixin focus {
+  &.focus-visible:focus {
+    @content;
+  }
+}
 
-// @mixin active {
-//   &.focus-visible:active {
-//     @content;
-//   }
-// }
+@mixin active {
+  &.focus-visible:active {
+    @content;
+  }
+}
 
-// @mixin hover-focus {
-//   @media (hover: hover) {
-//     &:hover:not(.focus-visible) {
-//       @content;
-//     }
-//   }
+@mixin hover-focus {
+  @media (hover: hover) {
+    &:hover:not(.focus-visible) {
+      @content;
+    }
+  }
 
-//   &.focus-visible:focus {
-//     @content;
-//   }
-// }
+  &.focus-visible:focus {
+    @content;
+  }
+}
 
 // Desktop first
 
@@ -49,21 +49,3 @@
     @content;
   }
 }
-
-// Mobile first
-// @mixin vp-768 {
-//   @media (min-width: $vp-768) {
-//     @content;
-//   }
-// }
-
-// @mixin vp-1024 {
-//   @media (min-width: $vp-1024) {
-//     @content;
-//   }
-// }
-
-// ---------------------------------
-
-// не нужно добавлять свои миксины для ресета списков, обнуления кнопок и прочие
-// этим вы усложняете работу команды, проверку вашего кода и будущую поддержку проекта

@@ -6,15 +6,20 @@
   border: none;
   border-radius: 3px;
   cursor: pointer;
+  transition: 0.2s;
 
   font-family: $ff-roboto-condensed;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.05em;
 
-  &--blue {
+  &--primary {
     color: $text-color-light;
     background-color: $base-color-primary;
+
+    @include hover-focus {
+      background-color: $base-color-primary-darker;
+    }
   }
 
   &--light {
@@ -22,16 +27,22 @@
     background-color: $alice-blue;
     border: 1px solid $base-color-primary;
     border-radius: 3px;
+
+    @include hover-focus {
+      background-color: $base-color-primary;
+      color: $text-color-light;
+    }
   }
 
   &--dark {
     color: $text-color-light;
     background-color: $base-color-dark;
-  }
 
-  &--darker {
-    color: $text-color-white;
-    background-color: $black-pearl;
+    @include hover-focus {
+      box-shadow: 0px 0px 0px 1px $base-color-white inset;
+      background-color: transparent;
+      color: $text-color-white;
+    }
   }
 
   &:disabled {
