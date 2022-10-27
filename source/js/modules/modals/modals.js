@@ -168,7 +168,7 @@ export class Modals {
       this._addListeners(modal);
       this._autoPlay(modal);
       document.addEventListener('click', this._documentClickHandler);
-      document.getElementById('client').select();
+      document.getElementById('modal-name').select();
     }, this._eventTimeout);
   }
 
