@@ -4,19 +4,20 @@ import {initModals} from './modules/modals/init-modals';
 let text = document.getElementById('more');
 let button = document.getElementById('moreButton');
 
-// Показать/скрыть текст в блоке About
-button.addEventListener('click', function () {
-  text.classList.toggle('hidden');
-  if (text.classList.contains('hidden')) {
-    button.innerHTML = 'Подробнее';
-  } else {
-    button.innerHTML = 'Скрыть';
-  }
-});
-
 window.addEventListener('DOMContentLoaded', () => {
   // Utils
   iosVhFix();
+
+  // Show / hide
+  button.addEventListener('click', function () {
+    text.classList.toggle('hidden');
+    if (text.classList.contains('hidden')) {
+      button.innerHTML = 'Подробнее';
+    } else {
+      button.innerHTML = 'Скрыть';
+    }
+  });
+
   // Modules
   // ---------------------------------
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
