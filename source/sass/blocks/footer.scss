@@ -1,5 +1,5 @@
 .footer {
-  padding-top: 50px;
+  padding-top: 56px;
   padding-bottom: 55px;
 
   background-color: $base-color-dark;
@@ -19,7 +19,7 @@
   box-sizing: border-box;
 
   display: flex;
-  column-gap: 2.5%;
+  column-gap: 2%;
 
   @include vp-1023 {
     display: grid;
@@ -60,7 +60,7 @@
 }
 
 .footer__logo {
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 
   @include vp-1023 {
     margin-bottom: 0;

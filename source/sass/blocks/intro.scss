@@ -46,12 +46,12 @@
 
 .intro__text h2 {
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 31px;
 
   font-weight: 700;
   font-size: 80px;
   line-height: 94px;
-  letter-spacing: 1.12px;
+  letter-spacing: 5.7px;
   text-transform: uppercase;
   color: $text-color-light;
 
@@ -70,7 +70,7 @@
 
 .intro__text p {
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 47px;
 
   font-family: $ff-pt-mono;
   font-size: 22px;
@@ -93,7 +93,7 @@
 
 .intro__link {
   width: 410px;
-  padding: 15px;
+  padding: 17px;
 
   @include vp-1023 {
     margin-left: 45px;

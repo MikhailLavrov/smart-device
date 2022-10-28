@@ -46,7 +46,7 @@
 
 .form legend {
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 
   font-size: 36px;
   line-height: 51px;
@@ -89,7 +89,6 @@
 .form__submit {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 20px 30px;
 
   @include vp-767 {
     display: flex;
@@ -98,8 +97,14 @@
   }
 }
 
+.form__submit {
+  gap: 20px 50px;
+}
+
 .form__input {
   margin-bottom: 35px;
+
+  gap: 20px 30px;
 
   @include vp-767 {
     margin-bottom: 30px;
@@ -109,7 +114,10 @@
 }
 
 .form__button {
-  padding: 15px 25px;
+  padding: 15px;
+  width: 265px;
+
+  letter-spacing: 2px;
 
   @include vp-1023 {
     max-width: 265px;
@@ -127,6 +135,7 @@
   grid-template-columns: 15px auto;
   gap: 11px;
   box-sizing: border-box;
+  align-self: flex-end;
 
   cursor: pointer;
 

@@ -1,5 +1,5 @@
 .connection {
-  padding: 170px 0 250px;
+  padding: 166px 0 248px;
 
   background: $connection-gradient;
   scroll-margin-top: 100px;
@@ -16,9 +16,11 @@
 }
 
 .connection__container {
+  padding: 0 60px;
+
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  column-gap: 10%;
+  column-gap: 3%;
 
   @include vp-1023 {
     display: flex;
@@ -29,7 +31,7 @@
 .connection__image {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 
   @include vp-1023 {
     display: none;

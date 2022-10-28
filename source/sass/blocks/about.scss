@@ -1,5 +1,5 @@
 .about {
-  padding: 60px 0 100px;
+  padding: 60px 0 95px;
 
   @include vp-1023 {
     padding: 40px 0 80px;
@@ -41,9 +41,10 @@
 
 .about__decor span {
   margin-bottom: 10px;
+  transform: translate(-15px, 10px);
 
   font-size: 156px;
-  line-height: 220px;
+  line-height: 1.41;
   font-weight: 700;
   color: transparent;
 
