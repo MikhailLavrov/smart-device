@@ -764,8 +764,8 @@ button,
 }
 
 .button--dark.focus-visible:focus {
-  -webkit-box-shadow: 0px 0px 0px 1px #ffffff inset;
-  box-shadow: 0px 0px 0px 1px #ffffff inset;
+  -webkit-box-shadow: 0 0 0 1px #ffffff inset;
+  box-shadow: 0 0 0 1px #ffffff inset;
   background-color: transparent;
   color: #ffffff;
 }
@@ -811,7 +811,24 @@ button,
 
 .products__item {
   background-color: #041827;
-  background: url("../../img/main-prod.webp") no-repeat center/cover;
+  background-image: url("../../img/main-prod.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.products__item--production {
+  background-size: 93em;
+  background-position: 17% 70%;
+}
+
+.products__item--mounting {
+  background-size: 93em;
+  background-position: 47% 70%;
+}
+
+.products__item--accessories {
+  background-size: 93em;
+  background-position: 78% 68%;
 }
 
 .products__link {
@@ -852,18 +869,6 @@ button,
 
 .products__link.focus-visible:focus::before {
   background-color: #009adc;
-}
-
-.products__item:nth-child(1) .products__link {
-  background-position: 15% 75%;
-}
-
-.products__item:nth-child(2) .products__link {
-  background-position: 50% 75%;
-}
-
-.products__item:nth-child(3) .products__link {
-  background-position: 85% 75%;
 }
 
 .connection {
@@ -1247,9 +1252,12 @@ button,
   padding: 305px 0 280px;
   min-height: 880px;
   background-color: #041827;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(transparent)), url("../../img/main-prod.webp") center/cover no-repeat;
-  background: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, transparent 100%), url("../../img/main-prod.webp") center/cover no-repeat;
-  background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, transparent 100%), url("../../img/main-prod.webp") center/cover no-repeat;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(transparent)), url("../../img/main-prod.webp");
+  background-image: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, transparent 100%), url("../../img/main-prod.webp");
+  background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, transparent 100%), url("../../img/main-prod.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 48% 54%;
 }
 
 .intro__container {
@@ -1719,6 +1727,21 @@ button,
     gap: 30px;
   }
 
+  .products__item--production {
+    background-size: 96em;
+    background-position: 30% 97%;
+  }
+
+  .products__item--mounting {
+    background-size: 96em;
+    background-position: 75% 55%;
+  }
+
+  .products__item--accessories {
+    background-size: 96em;
+    background-position: 19% 64%;
+  }
+
   .products__link {
     padding: 40px 45px;
     min-height: 250px;
@@ -1784,6 +1807,7 @@ button,
   .intro {
     min-height: 640px;
     padding: 180px 0 205px;
+    background-position: 19% 48%;
   }
 
   .intro__info {
@@ -1917,6 +1941,21 @@ button,
     display: none;
   }
 
+  .products__item--production {
+    background-size: 93em;
+    background-position: 30.5% 53%;
+  }
+
+  .products__item--mounting {
+    background-size: 93em;
+    background-position: 29.5% 95%;
+  }
+
+  .products__item--accessories {
+    background-size: 91em;
+    background-position: 72.5% 70%;
+  }
+
   .products__link {
     padding: 30px;
     min-height: 250px;
@@ -2043,6 +2082,7 @@ button,
   .intro {
     min-height: 560px;
     padding: 155px 0 190px;
+    background-position: 25% 39%;
   }
 
   .intro__container {
@@ -2153,8 +2193,8 @@ button,
   }
 
   .button--dark:hover:not(.focus-visible) {
-    -webkit-box-shadow: 0px 0px 0px 1px #ffffff inset;
-    box-shadow: 0px 0px 0px 1px #ffffff inset;
+    -webkit-box-shadow: 0 0 0 1px #ffffff inset;
+    box-shadow: 0 0 0 1px #ffffff inset;
     background-color: transparent;
     color: #ffffff;
   }
@@ -2207,7 +2247,7 @@ button,
 
 @media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .products__item {
-    background: url("../../img/main-prod2x.webp") no-repeat center/cover;
+    background-image: url("../../img/main-prod2x.webp");
   }
 
   .about__decor span {
@@ -2215,8 +2255,8 @@ button,
   }
 
   .intro {
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(transparent)), url("../../img/main-prod2x.webp") center/cover no-repeat;
-    background: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, transparent 100%), url("../../img/main-prod2x.webp") center/cover no-repeat;
-    background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, transparent 100%), url("../../img/main-prod2x.webp") center/cover no-repeat;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(transparent)), url("../../img/main-prod2x.webp");
+    background-image: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, transparent 100%), url("../../img/main-prod2x.webp");
+    background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, transparent 100%), url("../../img/main-prod2x.webp");
   }
 }

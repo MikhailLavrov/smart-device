@@ -3,24 +3,25 @@
   min-height: 880px;
 
   background-color: $base-color-dark;
-  background:
-    $intro-gradient,
-    url("../../img/main-prod.webp") center/cover no-repeat;
+  background-image: $intro-gradient, url("../../img/main-prod.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 48% 54%;
 
   @include retina {
-    background:
-      $intro-gradient,
-      url("../../img/main-prod2x.webp") center/cover no-repeat;
+    background-image: $intro-gradient, url("../../img/main-prod2x.webp");
   }
 
   @include vp-1023 {
     min-height: 640px;
     padding: 180px 0 205px;
+    background-position: 19% 48%;
   }
 
   @include vp-767 {
     min-height: 560px;
     padding: 155px 0 190px;
+    background-position: 25% 39%;
   }
 }
 

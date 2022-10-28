@@ -44,26 +44,18 @@
     background-color: $base-color-primary;
     box-shadow: none;
     border: none;
+
+    & svg {
+      fill: $text-color-light;
+    }
+
+    & h3 {
+      color: $text-color-light;
+    }
   }
 
   @include vp-767 {
     padding: 30px 30px 35px;
-  }
-}
-
-.features__item {
-  @include hover-focus {
-    & svg {
-      fill: $text-color-light;
-    }
-  }
-}
-
-.features__item {
-  @include hover-focus {
-    & h3 {
-      color: $text-color-light;
-    }
   }
 }
 

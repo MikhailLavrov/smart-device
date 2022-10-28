@@ -60,10 +60,61 @@
 
 .products__item {
   background-color: $base-color-dark;
-  background: url("../../img/main-prod.webp") no-repeat center/cover;
+  background-image: url("../../img/main-prod.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
 
   @include retina {
-    background: url("../../img/main-prod2x.webp") no-repeat center/cover;
+    background-image: url("../../img/main-prod2x.webp");
+  }
+
+  &--production {
+    background-size: 93em;
+    background-position: 17% 70%;
+  }
+
+  &--mounting {
+    background-size: 93em;
+    background-position: 47% 70%;
+  }
+
+  &--accessories {
+    background-size: 93em;
+    background-position: 78% 68%;
+  }
+
+  @include vp-1023 {
+    &--production {
+      background-size: 96em;
+      background-position: 30% 97%;
+    }
+
+    &--mounting {
+      background-size: 96em;
+      background-position: 75% 55%;
+    }
+
+    &--accessories {
+      background-size: 96em;
+      background-position: 19% 64%;
+    }
+  }
+
+  @include vp-767 {
+    &--production {
+      background-size: 93em;
+      background-position: 30.5% 53%;
+    }
+
+    &--mounting {
+      background-size: 93em;
+      background-position: 29.5% 95%;
+    }
+
+    &--accessories {
+      background-size: 91em;
+      background-position: 72.5% 70%;
+    }
   }
 }
 
@@ -126,16 +177,4 @@
       background-color: $base-color-primary-darker;
     }
   }
-}
-
-.products__item:nth-child(1) .products__link {
-  background-position: 15% 75%;
-}
-
-.products__item:nth-child(2) .products__link {
-  background-position: 50% 75%;
-}
-
-.products__item:nth-child(3) .products__link {
-  background-position: 85% 75%;
 }
