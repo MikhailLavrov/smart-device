@@ -1,8 +1,9 @@
 .products {
   padding: 70px 0 140px;
-  user-select: none;
 
   background-color: $base-color-dark;
+
+  user-select: none;
 
   @include vp-1023 {
     padding: 60px 0 75px;
@@ -17,9 +18,9 @@
   margin: 0;
   margin-bottom: 50px;
 
-  font-weight: 400;
   font-size: 36px;
-  line-height: 51px;
+  line-height: 1.42;
+  font-weight: 400;
   color: $text-color-white;
 
   & span:last-child {
@@ -28,12 +29,12 @@
 
   @include vp-767 {
     font-size: 28px;
-    line-height: 140.62%;
+    line-height: 1.41;
 
     & span:last-child {
       display: block;
       font-size: 28px;
-      line-height: 140.62%;
+      line-height: 1.41;
     }
 
     & span:first-child {
@@ -69,50 +70,50 @@
   }
 
   &--production {
-    background-size: 93em;
+    background-size: 430%;
     background-position: 17% 70%;
   }
 
   &--mounting {
-    background-size: 93em;
+    background-size: 430%;
     background-position: 47% 70%;
   }
 
   &--accessories {
-    background-size: 93em;
+    background-size: 430%;
     background-position: 78% 68%;
   }
 
   @include vp-1023 {
     &--production {
-      background-size: 96em;
-      background-position: 30% 97%;
+      background-size: 229%;
+      background-position: 30% 96%;
     }
 
     &--mounting {
-      background-size: 96em;
+      background-size: 229%;
       background-position: 75% 55%;
     }
 
     &--accessories {
-      background-size: 96em;
+      background-size: 229%;
       background-position: 19% 64%;
     }
   }
 
   @include vp-767 {
     &--production {
-      background-size: 93em;
+      background-size: 550%;
       background-position: 30.5% 53%;
     }
 
     &--mounting {
-      background-size: 93em;
+      background-size: 550%;
       background-position: 29.5% 95%;
     }
 
     &--accessories {
-      background-size: 91em;
+      background-size: 550%;
       background-position: 72.5% 70%;
     }
   }
@@ -130,11 +131,12 @@
   position: relative;
 
   font-size: 20px;
-  line-height: 30px;
+  line-height: 1.5;
   color: $text-color-white;
-  transition: 0.2s;
 
   background-color: $base-color-dark-opacity;
+
+  transition: box-shadow 0.2s;
 
   &::before {
     position: absolute;
@@ -172,9 +174,5 @@
 
   @include hover-focus {
     box-shadow: 0 0 30px 1px $base-color-primary-darker;
-
-    &::before {
-      background-color: $base-color-primary-darker;
-    }
   }
 }

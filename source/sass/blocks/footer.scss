@@ -28,9 +28,10 @@
   }
 
   @include vp-767 {
+    padding: 0;
+
     display: flex;
     flex-direction: column;
-    padding: 0;
     gap: 0;
   }
 }
@@ -40,16 +41,20 @@
 
   @include vp-1023 {
     margin-right: 0;
-    grid-column: 1/-1;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    grid-column: 1/-1;
   }
 
   @include vp-767 {
     padding: 35px 25px 30px;
+
     flex-direction: column;
     gap: 20px;
+
     border-bottom: 1px solid rgba(248, 253, 255, 0.7);
   }
 }

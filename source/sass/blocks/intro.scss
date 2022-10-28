@@ -13,14 +13,16 @@
   }
 
   @include vp-1023 {
-    min-height: 640px;
     padding: 180px 0 205px;
+    min-height: 640px;
+
     background-position: 19% 48%;
   }
 
   @include vp-767 {
-    min-height: 560px;
     padding: 155px 0 190px;
+    min-height: 560px;
+
     background-position: 25% 39%;
   }
 }
@@ -35,7 +37,7 @@
 
 .intro__info {
   margin: 0 auto;
-  margin-left: 11%;
+  margin-left: 125px;
 
   @include vp-1023 {
     margin-left: 0;
@@ -49,19 +51,20 @@
   font-weight: 700;
   font-size: 80px;
   line-height: 94px;
-  letter-spacing: 0.07em;
+  letter-spacing: 1.12px;
   text-transform: uppercase;
   color: $text-color-light;
 
   @include vp-1023 {
+    margin-bottom: 20px;
+
     font-size: 64px;
     line-height: 75px;
-    margin-bottom: 20px;
   }
 
   @include vp-767 {
     font-size: 36px;
-    line-height: 42px;
+    line-height: 1.17;
   }
 }
 
@@ -71,7 +74,7 @@
 
   font-family: $ff-pt-mono;
   font-size: 22px;
-  line-height: 155%;
+  line-height: 1.55;
   color: $text-color-light;
 
   @include vp-1023 {
@@ -80,7 +83,7 @@
 
   @include vp-767 {
     font-size: 14px;
-    line-height: 155%;
+    line-height: 1.55;
 
     & > br {
       display: none;
@@ -89,23 +92,20 @@
 }
 
 .intro__link {
-  max-width: 410px;
-  padding: 15px 25px;
-
-  font-size: 18px;
-  line-height: 21px;
+  width: 410px;
+  padding: 15px;
 
   @include vp-1023 {
-    margin-left: 7%;
+    margin-left: 45px;
   }
 
   @include vp-767 {
     margin-left: 0;
-    padding: 10px 30px;
-    max-width: 270px;
+    padding: 10px;
+    width: 270px;
 
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.14;
   }
 }
 

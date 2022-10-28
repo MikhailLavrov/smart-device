@@ -4,17 +4,9 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-
-  cursor: pointer;
-
-  @include hover-focus {
-    & svg {
-      fill: $base-color-primary-darker;
-    }
-  }
 }
 
-.logo svg {
+.logo > svg {
   fill: $base-color-primary;
 }
 
@@ -25,29 +17,21 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-
-  &--big {
-    margin-bottom: 5px;
-
-    font-weight: 700;
-    font-size: 25px;
-    line-height: 29px;
-
-    color: $text-color-light;
-  }
-
-  &--small {
-    font-family: $ff-roboto;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 14px;
-    color: $text-color-white;
-    opacity: 0.7;
-  }
+  gap: 5px;
 
   &--header {
     @include vp-767 {
       display: none;
     }
+  }
+}
+
+.logo__text svg {
+  &:first-child {
+    fill: $text-color-light;
+  }
+
+  &:last-child {
+    fill: $text-color-white-opacity;
   }
 }

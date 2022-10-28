@@ -37,6 +37,7 @@
 
 .header__info {
   width: 40%;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -44,8 +45,8 @@
   gap: 20px;
 
   @include vp-1023 {
-    width: auto;
     margin-right: 20px;
+    width: auto;
   }
 
   @include vp-767 {
@@ -55,11 +56,13 @@
 
 .header__info-link {
   padding: 0;
+
   display: flex;
   align-items: center;
 
   font-family: $ff-pt-mono;
-  line-height: 18px;
+  font-size: 16px;
+  line-height: 1.12;
   color: $text-color-light;
 
   @include hover-focus {
@@ -77,6 +80,7 @@
 
 .header__info-link svg {
   margin-right: 15px;
+
   fill: $base-color-primary;
 
   @include vp-1023 {
@@ -92,11 +96,8 @@
 
 .header__button {
   margin-right: 60px;
-  padding: 10px 16px;
+  padding: 10px;
   width: 160px;
-
-  font-size: 14px;
-  line-height: 16px;
 
   border: 1px solid $text-color-light;
 

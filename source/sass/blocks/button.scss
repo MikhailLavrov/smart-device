@@ -6,15 +6,20 @@
   border: none;
   border-radius: 3px;
   cursor: pointer;
-  transition: 0.2s;
+  transition: background-color 0.2s;
 
   font-family: $ff-roboto-condensed;
+  font-size: 14px;
+  line-height: 1.14;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.8px;
 
   &--primary {
+    font-size: 18px;
+    line-height: 1.17;
     color: $text-color-light;
+
     background-color: $base-color-primary;
 
     @include hover-focus {
@@ -24,24 +29,28 @@
 
   &--light {
     color: $text-color-alt;
+
     background-color: $alice-blue;
     border: 1px solid $base-color-primary;
     border-radius: 3px;
 
     @include hover-focus {
-      background-color: $base-color-primary;
       color: $text-color-light;
+
+      background-color: $base-color-primary;
     }
   }
 
   &--dark {
     color: $text-color-light;
+
     background-color: $base-color-dark;
 
     @include hover-focus {
-      box-shadow: 0 0 0 1px $base-color-white inset;
-      background-color: transparent;
       color: $text-color-white;
+
+      background-color: transparent;
+      box-shadow: 0 0 0 1px $base-color-white inset;
     }
   }
 
