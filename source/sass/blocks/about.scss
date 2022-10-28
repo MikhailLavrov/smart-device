@@ -48,6 +48,11 @@
   writing-mode: vertical-rl;
 
   background-image: url("../../img/about-bg.webp");
+
+  @include retina {
+    background-image: url("../../img/about-bg2x.webp");
+  }
+
   background-clip: text;
 
   user-select: none;

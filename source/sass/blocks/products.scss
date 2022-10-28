@@ -58,6 +58,15 @@
   }
 }
 
+.products__item {
+  background-color: $base-color-dark;
+  background: url("../../img/main-prod.webp") no-repeat center/cover;
+
+  @include retina {
+    background: url("../../img/main-prod2x.webp") no-repeat center/cover;
+  }
+}
+
 .products__link {
   padding: 50px 40px;
 
@@ -74,11 +83,7 @@
   color: $text-color-white;
   transition: 0.2s;
 
-  background:
-    $products-gradient,
-    url("../../img/main-prod.jpg") no-repeat,
-    $base-color-dark;
-  background-size: cover;
+  background-color: $base-color-dark-opacity;
 
   &::before {
     position: absolute;

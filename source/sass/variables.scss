@@ -21,7 +21,6 @@ $modal-bg: rgba(#03101b, 0.7);
 // Gradients & shadows
 $header-gradient: linear-gradient(180deg, $base-color-dark 84.9%, transparent 100%);
 $intro-gradient: linear-gradient(180deg, rgba(#192024, 0.7) 71.72%, transparent 100%);
-$products-gradient: linear-gradient($base-color-dark-opacity, $base-color-dark-opacity);
 $connection-gradient: linear-gradient(139deg, #026593 34%, $base-color-primary 34%);
 
 // Typography
@@ -45,3 +44,7 @@ $trans-default:                     0.3s $tf-default;
 // если требуется изинг отличный от $tf-default, то переменную называем не цифрой
 $trans-modal:                       0.6s cubic-bezier(0.55, 0, 0.1, 1);
 $trans-600:                         0.6s $tf-default;
+
+// Retina
+$retina-dpi:                        144dpi;
+$retina-dppx:                       1.5dppx;

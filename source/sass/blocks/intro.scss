@@ -2,10 +2,16 @@
   padding: 305px 0 280px;
   min-height: 880px;
 
+  background-color: $base-color-dark;
   background:
     $intro-gradient,
-    url("../../img/main-prod.jpg") center/cover no-repeat,
-    $base-color-dark;
+    url("../../img/main-prod.webp") center/cover no-repeat;
+
+  @include retina {
+    background:
+      $intro-gradient,
+      url("../../img/main-prod2x.webp") center/cover no-repeat;
+  }
 
   @include vp-1023 {
     min-height: 640px;
