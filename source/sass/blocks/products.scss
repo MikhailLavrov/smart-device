@@ -6,11 +6,11 @@
   user-select: none;
 
   @include vp-1023 {
-    padding: 60px 0 75px;
+    padding: 55px 0 76px;
   }
 
   @include vp-767 {
-    padding: 50px 0 86px;
+    padding: 47px 0 87px;
   }
 }
 
@@ -27,7 +27,13 @@
     display: none;
   }
 
+  @include vp-1023 {
+    margin-bottom: 37px;
+  }
+
   @include vp-767 {
+    margin-bottom: 28px;
+
     font-size: 28px;
     line-height: 1.41;
 
@@ -160,7 +166,7 @@
   }
 
   @include vp-767 {
-    padding: 30px;
+    padding: 27px 30px;
     min-height: 250px;
 
     font-size: 18px;
@@ -174,5 +180,23 @@
 
   @include hover-focus {
     box-shadow: 0 0 30px 1px $base-color-primary-darker;
+  }
+}
+
+.products__item--mounting br {
+  &:first-child {
+    display: none;
+
+    @include vp-1023 {
+      display: block;
+    }
+  }
+
+  &:last-child {
+    display: block;
+
+    @include vp-1023 {
+      display: none;
+    }
   }
 }

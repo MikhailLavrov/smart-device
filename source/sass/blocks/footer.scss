@@ -1,12 +1,13 @@
 .footer {
   padding-top: 56px;
-  padding-bottom: 55px;
+  padding-bottom: 40px;
 
   background-color: $base-color-dark;
   box-sizing: border-box;
 
   @include vp-1023 {
-    padding-bottom: 65px;
+    padding-top: 53px;
+    padding-bottom: 55px;
   }
 
   @include vp-767 {
@@ -50,10 +51,10 @@
   }
 
   @include vp-767 {
-    padding: 35px 25px 30px;
+    padding: 35px 25px 24px;
 
     flex-direction: column;
-    gap: 20px;
+    gap: 15px;
 
     border-bottom: 1px solid rgba(248, 253, 255, 0.7);
   }
@@ -64,5 +65,9 @@
 
   @include vp-1023 {
     margin-bottom: 0;
+  }
+
+  @include vp-767 {
+    transform: translateX(-10px);
   }
 }
