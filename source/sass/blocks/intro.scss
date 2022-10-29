@@ -5,8 +5,8 @@
   background-color: $base-color-dark;
   background-image: $intro-gradient, url("../../img/main-prod.webp");
   background-repeat: no-repeat;
-  background-size: 125%;
-  background-position: 48% 48%;
+  background-size: 2000px;
+  background-position: 50%;
 
   @include retina {
     background-image: $intro-gradient, url("../../img/main-prod2x.webp");
