@@ -5,8 +5,8 @@
   background-color: $base-color-dark;
   background-image: $intro-gradient, url("../../img/main-prod.webp");
   background-repeat: no-repeat;
-  background-size: 2000px;
-  background-position: 50%;
+  background-size: 125%;
+  background-position: center;
 
   @include retina {
     background-image: $intro-gradient, url("../../img/main-prod2x.webp");
@@ -16,15 +16,19 @@
     padding: 180px 0 205px;
     min-height: 640px;
 
-    background-size: 175%;
+    background-size: 1400px;
     background-position: 18% 48%;
+  }
+
+  @media (max-width: 1290px) {
+    background-size: cover;
   }
 
   @include vp-767 {
     padding: 149px 0 190px;
     min-height: 560px;
 
-    background-size: 375%;
+    background-size: 1200px;
     background-position: 25% 55%;
   }
 }

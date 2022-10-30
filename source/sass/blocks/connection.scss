@@ -1,8 +1,8 @@
 .connection {
   padding: 166px 0 248px;
+  scroll-margin-top: 100px;
 
   background: $connection-gradient;
-  scroll-margin-top: 100px;
 
   @include vp-1023 {
     padding: 45px 0 125px;

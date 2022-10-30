@@ -25,7 +25,7 @@
   @include vp-767 {
     background-image: url("data:image/svg+xml,%3Csvg width='15' height='1' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h15v1H0V0Z' fill='%23F8FDFF'/%3E%3C/svg%3E");
     background-repeat: no-repeat;
-    background-position: 90% center;
+    background-position: 90% 27px;
   }
 }
 
@@ -33,7 +33,7 @@
   @include vp-767 {
     background-image: url("data:image/svg+xml,%3Csvg width='15' height='15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M7.96875 7.03125V0h-.9375v7.03125H0v.9375h7.03125V15h.9375V7.96875H15v-.9375H7.96875Z' fill='%23F8FDFF'/%3E%3C/svg%3E");
     background-repeat: no-repeat;
-    background-position: 90% center;
+    background-position: 90% 20px;
   }
 }
 

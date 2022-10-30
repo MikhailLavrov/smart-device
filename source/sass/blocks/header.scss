@@ -1,4 +1,5 @@
 .header {
+  margin-bottom: -120px;
   padding: 25px 0 35px;
   width: 100%;
   min-height: 120px;
@@ -11,15 +12,18 @@
 
   background: $header-gradient;
 
-  position: fixed;
+  position: sticky;
+  top: 0;
   z-index: 100;
 
   @include vp-1023 {
+    margin-bottom: -100px;
     padding: 20px 0 25px;
     min-height: 100px;
   }
 
   @include vp-767 {
+    margin-bottom: -72px;
     padding: 12px 0 20px;
     min-height: 70px;
   }

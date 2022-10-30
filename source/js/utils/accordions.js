@@ -64,7 +64,6 @@ export class Accordions {
     }
 
     const closeElements = document.querySelectorAll('[data-accordion="element"]:not(.is-active)');
-
     closeElements.forEach((closeElement) => {
       const parent = closeElement.closest('[data-accordion="parent"]');
       const content = closeElement.querySelector('[data-accordion="content"]');
@@ -117,7 +116,8 @@ export class Accordions {
       this.closeAllAccordion(parentElement);
     }
 
-    element.classList.add('is-active');
+    element.classList.add('is-active', 'is-opened');
+    element.classList.remove('is-closed');
     if (transition) {
       contentElement.style.maxHeight = `${this._openHeight}px`;
     } else {
@@ -141,7 +141,8 @@ export class Accordions {
     if (!contentElement) {
       return;
     }
-    element.classList.remove('is-active');
+    element.classList.remove('is-active', 'is-opened');
+    element.classList.add('is-closed');
     if (transition) {
       contentElement.style.maxHeight = '0';
     } else {

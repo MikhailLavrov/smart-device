@@ -12,7 +12,7 @@ window.addEventListener('DOMContentLoaded', () => {
   initPhoneMask();
   initAccordions();
 
-  // Show / hide
+  // Show / hide About block content
   button.addEventListener('click', function () {
     text.classList.toggle('hidden');
     if (text.classList.contains('hidden')) {
