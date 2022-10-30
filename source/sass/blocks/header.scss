@@ -30,6 +30,7 @@
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  row-gap: 20px;
 
   box-sizing: border-box;
   color: $base-color-light;
@@ -47,6 +48,7 @@
   @include vp-1023 {
     margin-right: 20px;
     width: auto;
+    max-width: 50%;
     align-self: flex-start;
   }
 
