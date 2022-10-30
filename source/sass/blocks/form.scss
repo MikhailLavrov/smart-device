@@ -86,7 +86,7 @@
   }
 }
 
-.form__input,
+.form__inputs,
 .form__submit {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -106,7 +106,7 @@
   }
 }
 
-.form__input {
+.form__inputs {
   margin-bottom: 35px;
 
   gap: 20px 30px;
@@ -208,7 +208,7 @@
   line-height: 22px;
 }
 
-.form--modal .form__input {
+.form--modal .form__inputs {
   margin-bottom: 25px;
 
   display: flex;

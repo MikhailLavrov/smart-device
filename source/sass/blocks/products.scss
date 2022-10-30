@@ -59,9 +59,7 @@
   box-sizing: border-box;
 
   @include vp-1023 {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
+    display: block;
   }
 }
 
@@ -69,57 +67,56 @@
   background-color: $base-color-dark;
   background-image: url("../../img/main-prod.webp");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 430%;
 
   @include retina {
     background-image: url("../../img/main-prod2x.webp");
   }
 
   &--production {
-    background-size: 430%;
     background-position: 17% 70%;
   }
 
   &--mounting {
-    background-size: 430%;
     background-position: 47% 70%;
   }
 
   &--accessories {
-    background-size: 430%;
     background-position: 78% 68%;
   }
 
   @include vp-1023 {
+    background-size: 229%;
+
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+
     &--production {
-      background-size: 229%;
       background-position: 30% 96%;
     }
 
     &--mounting {
-      background-size: 229%;
       background-position: 75% 55%;
     }
 
     &--accessories {
-      background-size: 229%;
       background-position: 19% 64%;
     }
   }
 
   @include vp-767 {
+    background-size: 550%;
+
     &--production {
-      background-size: 550%;
       background-position: 30.5% 53%;
     }
 
     &--mounting {
-      background-size: 550%;
       background-position: 29.5% 95%;
     }
 
     &--accessories {
-      background-size: 550%;
       background-position: 72.5% 70%;
     }
   }

@@ -41,7 +41,7 @@
 }
 
 .header__info {
-  width: 455px;
+  width: 460px;
 
   display: flex;
   align-items: center;
@@ -114,20 +114,8 @@
 }
 
 .header__logo {
-  margin-right: 5px;
-
-  @include vp-1023 {
-    margin-right: 0;
-  }
-
-  @include vp-767 {
-    width: auto;
-  }
-}
-
-.header__logo svg {
   @include vp-767 {
     width: 35px;
-    height: 35px;
+    height: auto;
   }
 }

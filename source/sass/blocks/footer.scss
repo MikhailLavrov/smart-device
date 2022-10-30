@@ -25,7 +25,7 @@
   @include vp-1023 {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 30px 35px;
+    gap: 35px 35px;
   }
 
   @include vp-767 {
@@ -61,13 +61,15 @@
 }
 
 .footer__logo {
-  margin-bottom: 25px;
+  margin-top: -5px;
+  margin-bottom: 30px;
+  display: block;
 
   @include vp-1023 {
     margin-bottom: 0;
   }
 
   @include vp-767 {
-    transform: translateX(-10px);
+    margin-top: 0;
   }
 }

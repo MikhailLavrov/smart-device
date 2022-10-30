@@ -116,8 +116,9 @@ export class Accordions {
       this.closeAllAccordion(parentElement);
     }
 
-    element.classList.add('is-active', 'is-opened');
-    element.classList.remove('is-closed');
+    element.classList.add('is-active');
+    element.querySelector('.accordion__button').classList.remove('is-closed');
+    element.querySelector('.accordion__button').classList.add('is-opened');
     if (transition) {
       contentElement.style.maxHeight = `${this._openHeight}px`;
     } else {
@@ -141,8 +142,9 @@ export class Accordions {
     if (!contentElement) {
       return;
     }
-    element.classList.remove('is-active', 'is-opened');
-    element.classList.add('is-closed');
+    element.classList.remove('is-active');
+    element.querySelector('.accordion__button').classList.remove('is-opened');
+    element.querySelector('.accordion__button').classList.add('is-closed');
     if (transition) {
       contentElement.style.maxHeight = '0';
     } else {

@@ -14,17 +14,12 @@
       <header class="header">
         <div class="header__container container">
           <a class="header__logo logo">
-            <svg width="55" height="55" role="img" aria-hidden="true" focusable="false" aria-label="Логотип.">
-              <use xlink:href="/img/sprite_auto.svg#logo"></use>
-            </svg>
-            <div class="logo__text logo__text--header">
-              <svg width="133" height="20" role="img" aria-hidden="true" focusable="false" aria-label="Текст для логотипа Smart Device.">
-                <use xlink:href="/img/sprite_auto.svg#logo-text-smart"></use>
-              </svg>
-              <svg width="133" height="20" role="img" aria-hidden="true" focusable="false" aria-label="Текст для логотипа умные технологии.">
-                <use xlink:href="/img/sprite_auto.svg#logo-text-clever"></use>
-              </svg>
-            </div>
+            <picture>
+              <source media="(max-width: 767px)" type="image/webp" srcset="/img/logo-short.webp 1x, /img/logo-short2x.webp 2x">
+              <source media="(max-width: 767px)" type="image/png" srcset="/img/logo-short.png 1x, /img/logo-short2x.png 2x">
+              <source type="image/webp" srcset="./img/logo.webp 1x, ./img/logo2x.webp 2x">
+              <img width="215" height="55" src="./img/logo.png" srcset="./img/logo2x.png 2x" alt="Логотип Smart Device.">
+            </picture>
           </a>
           <div class="header__info">
             <a class="header__info-link" href="mailto:info@sd.ru">
@@ -147,7 +142,7 @@
                 <fieldset>
                   <legend>Остались вопросы? Задайте их нам!</legend>
                   <p>Мы проконсультируем Вас бесплатно</p>
-                  <div class="form__input">
+                  <div class="form__inputs">
                     <label class="visually-hidden" for="name">Имя.</label>
                     <input type="text" id="name" placeholder="Имя" name="name" required>
                     <label class="visually-hidden" for="phone">Телефон.</label>
@@ -173,17 +168,10 @@
         <div class="footer__container container accordion" data-accordion="parent" data-single="data-single" data-destroy="(max-width: 767px)">
           <div class="footer__links">
             <a class="footer__logo logo">
-              <svg width="55" height="55" role="img" aria-hidden="true" focusable="false" aria-label="Логотип.">
-                <use xlink:href="/img/sprite_auto.svg#logo"></use>
-              </svg>
-              <div class="logo__text logo__text--footer">
-                <svg width="133" height="20" role="img" aria-hidden="true" focusable="false" aria-label="Текст для логотипа Smart Device.">
-                  <use xlink:href="/img/sprite_auto.svg#logo-text-smart"></use>
-                </svg>
-                <svg width="133" height="20" role="img" aria-hidden="true" focusable="false" aria-label="Текст для логотипа умные технологии.">
-                  <use xlink:href="/img/sprite_auto.svg#logo-text-clever"></use>
-                </svg>
-              </div>
+              <picture>
+                <source type="image/webp" srcset="./img/logo.webp 1x, ./img/logo2x.webp 2x">
+                <img width="215" height="55" src="./img/logo.png" srcset="./img/logo2x.png 2x" alt="Логотип Smart Device.">
+              </picture>
             </a>
             <ul class="socials">
               <li class="socials__item">
@@ -209,8 +197,8 @@
               </li>
             </ul>
           </div>
-          <div class="accordion__element is-active is-closed accordion__element--navigation" data-accordion="element">
-            <button class="accordion__button" type="button" data-accordion="button">Разделы сайта</button>
+          <nav class="accordion__element is-active accordion__element--navigation" data-accordion="element">
+            <button class="accordion__button is-closed" type="button" data-accordion="button">Разделы сайта</button>
             <div class="accordion__content accordion__content--navigation" data-accordion="content">
               <ul class="accordion__list">
                 <li class="accordion__item">
@@ -238,9 +226,9 @@
                 </li>
               </ul>
             </div>
-          </div>
-          <div class="accordion__element is-active is-closed accordion__element--contacts"  data-accordion="element">
-            <button class="accordion__button" type="button" data-accordion="button">Наш офис</button>
+          </nav>
+          <div class="accordion__element is-active accordion__element--contacts"  data-accordion="element">
+            <button class="accordion__button is-closed" type="button" data-accordion="button">Наш офис</button>
             <div class="accordion__content" data-accordion="content">
               <ul class="accordion__list">
                 <li class="accordion__item">
@@ -272,7 +260,7 @@
               <fieldset>
                 <legend>Закажите звонок</legend>
                 <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
-                <div class="form__input">
+                <div class="form__inputs">
                   <label class="visually-hidden" for="modal-name">Имя.</label>
                   <input type="text" id="modal-name" placeholder="Имя" name="name" required>
                   <label class="visually-hidden" for="modal-phone">Телефон.</label>
