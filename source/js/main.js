@@ -2,25 +2,14 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {initPhoneMask} from './utils/phone-mask';
 import {initAccordions} from './utils/init-accordion';
-
-let text = document.getElementById('more');
-let button = document.getElementById('moreButton');
+import {showMoreInfo} from './utils/show-more';
 
 window.addEventListener('DOMContentLoaded', () => {
   // Utils
   iosVhFix();
   initPhoneMask();
   initAccordions();
-
-  // Show / hide About block content
-  button.addEventListener('click', function () {
-    text.classList.toggle('hidden');
-    if (text.classList.contains('hidden')) {
-      button.innerHTML = 'Подробнее';
-    } else {
-      button.innerHTML = 'Скрыть';
-    }
-  });
+  showMoreInfo();
 
   // Modules
   // ---------------------------------

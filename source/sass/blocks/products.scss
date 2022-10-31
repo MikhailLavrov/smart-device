@@ -67,14 +67,14 @@
   background-color: $base-color-dark;
   background-image: url("../../img/main-prod.webp");
   background-repeat: no-repeat;
-  background-size: 430%;
+  background-size: 1450px;
 
   @include retina {
     background-image: url("../../img/main-prod2x.webp");
   }
 
   &--production {
-    background-position: 17% 70%;
+    background-position: 16% 70%;
   }
 
   &--mounting {
@@ -86,28 +86,24 @@
   }
 
   @include vp-1023 {
-    background-size: 229%;
-
     &:not(:last-child) {
       margin-bottom: 30px;
     }
 
     &--production {
-      background-position: 30% 96%;
+      background-position: 28% 96%;
     }
 
     &--mounting {
-      background-position: 75% 55%;
+      background-position: 77% 55%;
     }
 
     &--accessories {
-      background-position: 19% 64%;
+      background-position: 17% 64%;
     }
   }
 
   @include vp-767 {
-    background-size: 550%;
-
     &--production {
       background-position: 30.5% 53%;
     }
