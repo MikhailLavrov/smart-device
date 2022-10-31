@@ -144,11 +144,11 @@
                   <p>Мы проконсультируем Вас бесплатно</p>
                   <div class="form__inputs">
                     <label class="visually-hidden" for="name">Имя.</label>
-                    <input type="text" id="name" placeholder="Имя" name="name" required>
+                    <input type="text" id="name" placeholder="Имя" name="name" pattern="^[a-zA-Zа-яА-Я]\s*+$" minlength="2" maxlength="50" required>
                     <label class="visually-hidden" for="phone">Телефон.</label>
-                    <input type="tel" id="phone" placeholder="Телефон" name="phone" required>
+                    <input type="tel" id="phone" placeholder="Телефон" name="phone" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{10,10}$" required>
                     <label class="visually-hidden" for="question">Ваш вопрос.</label>
-                    <textarea id="question" placeholder="Ваш вопрос" name="text"></textarea>
+                    <textarea id="question" placeholder="Ваш вопрос" name="text" maxlength="1000"></textarea>
                   </div>
                   <div class="form__submit">
                     <button class="form__button button button--dark" type="submit" form="form-index">Задать вопрос</button>
