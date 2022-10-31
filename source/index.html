@@ -144,7 +144,7 @@
                   <p>Мы проконсультируем Вас бесплатно</p>
                   <div class="form__inputs">
                     <label class="visually-hidden" for="name">Имя.</label>
-                    <input type="text" id="name" placeholder="Имя" name="name" pattern="^[a-zA-Zа-яА-Я]\s*+$" minlength="2" maxlength="50" required>
+                    <input type="text" id="name" placeholder="Имя" name="name" pattern="^[а-яА-ЯёЁa-zA-Z-.]+$" minlength="2" maxlength="50" required>
                     <label class="visually-hidden" for="phone">Телефон.</label>
                     <input type="tel" id="phone" placeholder="Телефон" name="phone" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{10,10}$" required>
                     <label class="visually-hidden" for="question">Ваш вопрос.</label>
@@ -262,9 +262,9 @@
                 <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
                 <div class="form__inputs">
                   <label class="visually-hidden" for="modal-name">Имя.</label>
-                  <input type="text" id="modal-name" placeholder="Имя" name="name" required>
+                  <input type="text" id="modal-name" placeholder="Имя" name="name" pattern="^[а-яА-ЯёЁa-zA-Z-.]+$" minlength="2" maxlength="50" required>
                   <label class="visually-hidden" for="modal-phone">Телефон.</label>
-                  <input type="tel" id="modal-phone" placeholder="Телефон" name="phone" required>
+                  <input type="tel" id="modal-phone" placeholder="Телефон" name="phone" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{10,10}$" required>
                   <label class="visually-hidden" for="modal-question">Ваш вопрос.</label>
                   <textarea id="modal-question" placeholder="Ваш вопрос" name="text"></textarea>
                 </div>
