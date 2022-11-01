@@ -15,10 +15,10 @@
         <div class="header__container container">
           <a class="header__logo">
             <picture>
-              <source media="(max-width: 767px)" type="image/webp" srcset="/img/logo-short.webp 1x, /img/logo-short2x.webp 2x">
-              <source media="(max-width: 767px)" type="image/png" srcset="/img/logo-short.png 1x, /img/logo-short2x.png 2x">
-              <source type="image/webp" srcset="./img/logo.webp 1x, ./img/logo2x.webp 2x">
-              <img width="215" height="55" src="./img/logo.png" srcset="./img/logo2x.png 2x" alt="Логотип Smart Device.">
+              <source media="(max-width: 767px)" type="image/webp" srcset="img/logo-short.webp 1x, img/logo-short2x.webp 2x">
+              <source media="(max-width: 767px)" type="image/png" srcset="img/logo-short.png 1x, img/logo-short2x.png 2x">
+              <source type="image/webp" srcset="img/logo.webp 1x, img/logo2x.webp 2x">
+              <img width="215" height="55" src="img/logo.png" srcset="img/logo2x.png 2x" alt="Логотип Smart Device.">
             </picture>
           </a>
           <div class="header__info">
@@ -144,7 +144,7 @@
                   <p>Мы проконсультируем Вас бесплатно</p>
                   <div class="form__inputs">
                     <label class="visually-hidden" for="name">Имя.</label>
-                    <input type="text" id="name" placeholder="Имя" name="name" pattern="^[а-яА-ЯёЁa-zA-Z-.]+$" minlength="2" maxlength="50" required>
+                    <input type="text" id="name" placeholder="Имя" name="name" pattern="^[а-яА-ЯёЁa-zA-Z-.]\s*+$" minlength="2" maxlength="50" required>
                     <label class="visually-hidden" for="phone">Телефон.</label>
                     <input type="tel" id="phone" placeholder="Телефон" name="phone" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{10,10}$" required>
                     <label class="visually-hidden" for="question">Ваш вопрос.</label>

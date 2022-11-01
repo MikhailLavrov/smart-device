@@ -20,6 +20,8 @@
     margin-bottom: -100px;
     padding: 20px 0 25px;
     min-height: 100px;
+
+    position: relative;
   }
 
   @include vp-767 {
