@@ -65,12 +65,12 @@
 
 .products__item {
   background-color: $base-color-dark;
-  background-image: url("../../img/main-prod.webp");
+  background-image: url("../img/main-prod.webp");
   background-repeat: no-repeat;
   background-size: 1450px;
 
   @include retina {
-    background-image: url("../../img/main-prod2x.webp");
+    background-image: url("../img/main-prod2x.webp");
   }
 
   &--production {

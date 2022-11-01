@@ -52,10 +52,10 @@
   background-clip: text;
   user-select: none;
 
-  background-image: url("../../img/about-bg.webp");
+  background-image: url("../img/about-bg.webp");
 
   @include retina {
-    background-image: url("../../img/about-bg2x.webp");
+    background-image: url("../img/about-bg2x.webp");
   }
 
   @include vp-1023 {

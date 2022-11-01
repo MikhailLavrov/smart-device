@@ -770,7 +770,7 @@ button,
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  background-image: url("../../img/about-bg.webp");
+  background-image: url("../img/about-bg.webp");
 }
 
 .about__info {
@@ -1308,9 +1308,9 @@ button,
   padding: 305px 0 280px;
   min-height: 880px;
   background-color: #041827;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(transparent)), url("../../img/main-prod.webp");
-  background-image: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, transparent 100%), url("../../img/main-prod.webp");
-  background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, transparent 100%), url("../../img/main-prod.webp");
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(transparent)), url("../img/main-prod.webp");
+  background-image: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, transparent 100%), url("../img/main-prod.webp");
+  background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, transparent 100%), url("../img/main-prod.webp");
   background-repeat: no-repeat;
   background-size: 125%;
   background-position: center;
@@ -1532,7 +1532,7 @@ button,
 
 .products__item {
   background-color: #041827;
-  background-image: url("../../img/main-prod.webp");
+  background-image: url("../img/main-prod.webp");
   background-repeat: no-repeat;
   background-size: 1450px;
 }
@@ -2309,16 +2309,16 @@ button,
 
 @media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .about__decor span {
-    background-image: url("../../img/about-bg2x.webp");
+    background-image: url("../img/about-bg2x.webp");
   }
 
   .intro {
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(transparent)), url("../../img/main-prod2x.webp");
-    background-image: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, transparent 100%), url("../../img/main-prod2x.webp");
-    background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, transparent 100%), url("../../img/main-prod2x.webp");
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(transparent)), url("../img/main-prod2x.webp");
+    background-image: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, transparent 100%), url("../img/main-prod2x.webp");
+    background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, transparent 100%), url("../img/main-prod2x.webp");
   }
 
   .products__item {
-    background-image: url("../../img/main-prod2x.webp");
+    background-image: url("../img/main-prod2x.webp");
   }
 }

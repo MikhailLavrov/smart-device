@@ -3,13 +3,13 @@
   min-height: 880px;
 
   background-color: $base-color-dark;
-  background-image: $intro-gradient, url("../../img/main-prod.webp");
+  background-image: $intro-gradient, url("../img/main-prod.webp");
   background-repeat: no-repeat;
   background-size: 125%;
   background-position: center;
 
   @include retina {
-    background-image: $intro-gradient, url("../../img/main-prod2x.webp");
+    background-image: $intro-gradient, url("../img/main-prod2x.webp");
   }
 
   @include vp-1023 {
