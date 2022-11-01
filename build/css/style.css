@@ -1434,7 +1434,10 @@ button,
   align-items: center;
   width: 100%;
   min-height: 100%;
-  padding: 60px 40px;
+  padding: 145px 40px;
+  -webkit-transform: translateX(-8px);
+  -ms-transform: translateX(-8px);
+  transform: translateX(-8px);
 }
 
 .modal__overlay {
@@ -1452,6 +1455,19 @@ button,
   padding: 40px;
   border-radius: 3px;
   background-color: #00b2ff;
+}
+
+.modal__content legend {
+  margin-bottom: 2px;
+}
+
+.modal__content p {
+  margin-bottom: 35px;
+}
+
+.modal__button {
+  max-width: 100%;
+  width: 100%;
 }
 
 .modal__close-btn {
