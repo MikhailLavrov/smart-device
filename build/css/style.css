@@ -1137,6 +1137,12 @@ button,
   opacity: 0.85;
 }
 
+.form__submit--modal label {
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+}
+
 .form__submit label > input,
 .form__submit label > span {
   -ms-flex-item-align: center;
@@ -2124,6 +2130,12 @@ button,
   .form__button {
     max-width: 100%;
     line-height: 1.19;
+  }
+
+  .form__submit label {
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
   }
 
   .form--modal .form__button {

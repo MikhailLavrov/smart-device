@@ -153,6 +153,14 @@
   @include hover-focus {
     opacity: 0.85;
   }
+
+  @include vp-767 {
+    align-self: center;
+  }
+}
+
+.form__submit--modal label {
+  align-self: center;
 }
 
 .form__submit label > input,
