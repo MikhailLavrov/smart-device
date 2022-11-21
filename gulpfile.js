@@ -9,11 +9,11 @@ import { svgo, sprite, createWebp, optimizeImages } from './gulp/optimizeImages.
 const server = browserSync.create();
 const streamStyles = () => compileStyles().pipe(server.stream());
 
-const clean = () => del('build');
+const clean = () => del('docs');
 
 const syncServer = () => {
   server.init({
-    server: 'build/',
+    server: 'docs/',
     index: 'index.html',
     notify: false,
     open: true,
@@ -39,7 +39,7 @@ const refresh = (done) => {
   done();
 };
 
-const build = gulp.series(clean, svgo, copy, compileStyles, sprite, js);
-const start = gulp.series(build, syncServer);
+const docs = gulp.series(clean, svgo, copy, compileStyles, sprite, js);
+const start = gulp.series(docs, syncServer);
 
-export { optimizeImages as imagemin, createWebp as webp, build, start };
+export { optimizeImages as imagemin, createWebp as webp, docs, start };
